@@ -4,13 +4,13 @@ import java.util.ArrayList;
 public class loginemployee {
     static String UsernameEmp ;
     static String PasswordEmp ;
-    static String UsernameEmpStr  ;
-    static String PasswordEmpStr  ;
+    static String UsernameEmpStr ;
+    static String PasswordEmpStr ;
     static String UsernameLogEmp ;
     static String PasswordLogEmp ;       
     static String UsernameLogEmp1 = "Aom" ;
     static String PasswordLogEmp1 = "1234" ;
-    static String UsernameLogEmp2 = "Pote" ;
+    static String UsernameLogEmp2 = "Pota" ;
     static String PasswordLogEmp2 = "1234" ;
     static int member;
     
@@ -31,7 +31,7 @@ public class loginemployee {
         UsernameEmp = LoginEmployee.nextLine();
         log2.add(UsernameEmp);
         System.out.print("Password >>>>> ");
-        PasswordEmp= LoginEmployee.nextLine();
+        PasswordEmp = LoginEmployee.nextLine();
         log2.add(PasswordEmp);
         UsernameEmpStr = (String) log2.get(0); 
         PasswordEmpStr = (String) log2.get(1);

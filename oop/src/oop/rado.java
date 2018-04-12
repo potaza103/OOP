@@ -69,16 +69,18 @@ public class rado extends watch implements gender,qualities  {
             super.loop();                               
     }
    
-   public void Msum(){          
+   public void Msum(){
+            Scanner show = new Scanner(System.in);
             System.out.println("=============================== Show Detail ===============================");                      
             if(Mrado == 1){           
             sumprice = MPrado1 * amount;
-                System.out.println("Male "+Mrado1+" amount : "+amount+" Price : "+sumprice);               
+                System.out.println("Male "+Mrado1+" amount : "+amount+" Price : "+sumprice);
+                
             }       
             else{           
             sumprice = MPrado2 * amount;
                 System.out.println("Male "+Mrado2+" amount : "+amount+" Price : "+sumprice);              
-            }             
+            }           
             System.out.println("===========================================================================");
             System.out.println("");                   
         }

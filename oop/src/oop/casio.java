@@ -120,7 +120,7 @@ public class casio extends watch implements gender,qualities {
             System.out.println("=============================== Show Detail ===============================");  
             if(Fcasio == 1) {           
             sumprice = FPcasio1 * amount;
-                System.out.println("Female "+Fcasio1+" amount : "+amount+" Price : "+sumprice); 
+                System.out.println("Female "+Fcasio1+" amount : "+amount+" Price : "+sumprice);               
                 //Fcasioinven1 = Fcasioinven1-amount;
             } 
             else{              

@@ -12,7 +12,7 @@ public class Project {
             System.out.println("Please select your identity");
             System.out.println("Press 1 : employee   ");
             System.out.println("Press 2 : customer  ");
-            System.out.print("Press Enter Number  >>>>>");
+            System.out.print("Press Enter Number  >>>>> ");
             Scanner are_member = new Scanner(System.in);
             select = are_member.nextInt();
         }while (select != 1 && select != 2);
@@ -24,7 +24,7 @@ public class Project {
                 System.out.println("Are you a member");
                 System.out.println("Press 1 to login   ");
                 System.out.println("Press 2 to singin  ");
-                System.out.print("Press Enter Number  >>>>>");
+                System.out.print("Press Enter Number  >>>>> ");
                 Scanner are_member = new Scanner(System.in);
                 member = are_member.nextInt();
             }while (member != 1 && member != 2);
