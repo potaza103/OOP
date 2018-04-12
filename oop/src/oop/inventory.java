@@ -1,6 +1,7 @@
 package oop;
 public abstract class inventory  {   
-   
+    
+    
 //    Casio
     String Mcasio1 = "Casio Standard Gent AW-90H-2BVDF";
     int Mcasioinven1 = 10;

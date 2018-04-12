@@ -2,7 +2,6 @@ package oop;
 import java.util.Scanner;
 public class casio extends watch implements gender,qualities {    
     
-    
     public void casioshow(){
        System.out.println("========================================================");
        System.out.println("                         Casio                          ");

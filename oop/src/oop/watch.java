@@ -1,8 +1,6 @@
 package oop;
 import java.util.Scanner;
-import java.util.ArrayList;
-public abstract class watch extends inventory {
-    static String detail;
+public abstract class watch extends inventory {      
     static int Mcasio;   
     static int Fcasio;
     static int Momega;
@@ -18,17 +16,15 @@ public abstract class watch extends inventory {
     static int amount;
     int numbermodel;
     static int sex;
-    static int want;     
+    static int want;
+    private String a;
     
-    public void watchshow(){  
-        System.out.println("========================================================");
+    watch(){
         System.out.println("                 Welcome To Watch Store                 ");
-        System.out.println("========================================================");             
-    } 
+    }
     
     public void loop(){
-        do{
-            
+        do{       
             System.out.println("Do you want Watch Store Enter 1");
             System.out.println("Do you want Check bill  Enter 2");
             System.out.print("Enter Number : >>>>>>>>>> ");            
@@ -54,6 +50,8 @@ public abstract class watch extends inventory {
  }
      
     public abstract void print();
+
+    
        
 }
 

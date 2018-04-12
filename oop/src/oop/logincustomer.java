@@ -1,13 +1,18 @@
 package oop;
 import java.util.Scanner;
 //import  java.util.ArrayList;
-public class logincustomer {
+public class logincustomer {    
     static String UsernameLog ;
     static String PasswordLog ;
-    private String UsernameCus = "admin" ;
-    private String PasswordCus = "1234" ;
+    private String UsernameCus ;
+    private String PasswordCus ;
     
-    logincustomer(){
+    logincustomer(String UsernameCus,String PasswordCus){
+        this();
+        this.UsernameCus = UsernameCus;
+        this.PasswordCus = PasswordCus;
+    }
+    logincustomer(){         
         System.out.println("===========+++++++++++++++++++++++++++===========");
         System.out.println("==============WELLCOME TO WATCH STORE============");
         System.out.println("===========+++++++++++++++++++++++++++===========");
@@ -29,7 +34,8 @@ public class logincustomer {
         
 //        System.out.println(log.size());
     }while(!(UsernameCus.equals(UsernameLog)&&PasswordCus.equals(PasswordLog)));   
-        
+        item item = new item();
+        item.print();
     }
     
     

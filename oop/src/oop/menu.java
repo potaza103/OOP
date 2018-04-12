@@ -8,9 +8,11 @@ public class menu extends watch {
     swatch swatch = new swatch();
     Scanner a = new Scanner(System.in);
     
-    public void print() { 
-        do{
-            super.watchshow();
+    public void print() {       
+        do{          
+            System.out.println("========================================================");
+            System.out.println("                 Welcome To Watch Store                 ");
+            System.out.println("========================================================");           
             System.out.println("Enter Number 1 : Casio");
             System.out.println("Enter Number 2 : Omega");
             System.out.println("Enter Number 3 : Rolex");

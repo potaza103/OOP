@@ -7,7 +7,7 @@ public class Project {
     
     public static void main(String[] args) {  
         
-        logincustomer logincustomer = new logincustomer();
+        logincustomer logincustomer = new logincustomer("admin","1234");      
         do{
             System.out.println("Please select your identity");
             System.out.println("Press 1 : employee   ");
