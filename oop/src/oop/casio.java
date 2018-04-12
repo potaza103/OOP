@@ -1,10 +1,7 @@
 package oop;
 import java.util.Scanner;
 public class casio extends watch implements gender,qualities {    
-    static int Minvencasio ;
-    static int MinvencasioS ;
-    static int Finvencasio ;
-    static int FinvencasioS ;
+    
     
     public void casioshow(){
        System.out.println("========================================================");
@@ -42,61 +39,36 @@ public class casio extends watch implements gender,qualities {
     public void MaleQualities(){
         Scanner model = new Scanner(System.in);
          do{
-            Minvencasio = MinvencasioS ;
-            Mcasioinven1 = Minvencasio;
-            Mcasioinven2 = Minvencasio;
+            
             System.out.println("Please select a model Male");
             System.out.println("Enter Number : 1 for "+Mcasio1+" Price : "+MPcasio1+" >>Inventory : "+Mcasioinven1 ); //รุ่น ราคา คลังสินค้า
             System.out.println("Enter Number : 2 for "+Mcasio2+" Price : "+MPcasio2+" >>Inventory : "+Mcasioinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mcasio = model.nextInt(); 
-            System.out.println("");
-            if (Mcasio == 1){
-                Minvencasio = Mcasioinven1 ;
-                System.out.print("How many do you want ? >>>>>>>>> ");
-                amount = model.nextInt();  
-                MinvencasioS = Minvencasio - amount ;
-            }else if (Mcasio == 2){
-                Minvencasio = Mcasioinven2 ;
-                System.out.print("How many do you want ? >>>>>>>>> ");
-                amount = model.nextInt();  
-                MinvencasioS  = Minvencasio - amount ;
-            }
+            System.out.println("");          
         }while(Fcasio != 1 && Fcasio != 2);
-        
+            System.out.print("How many do you want ? >>>>>>>>> ");
+            amount = model.nextInt();
             System.out.println("");
-            Fsum();
+            Msum();           
             super.loop();          
     }
     
    public void FemaleQualities(){
         Scanner model = new Scanner(System.in);
-        do{
-            
-            Finvencasio = FinvencasioS ;
+        do{                       
             System.out.println("Please select a model Female");
             System.out.println("Enter Number : 1 for "+Fcasio1+" Price : "+FPcasio1+" >>Inventory : "+Fcasioinven1 );
             System.out.println("Enter Number : 2 for "+Fcasio2+" Price : "+FPcasio2+" >>Inventory : "+Fcasioinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
             Fcasio = model.nextInt(); 
-            System.out.println("");
-            
-            if (Fcasio == 1){
-                Finvencasio = Fcasioinven1 ;
-                System.out.print("How many do you want ? >>>>>>>>> ");
-                amount = model.nextInt();  
-                FinvencasioS = Finvencasio - amount ;
-            }else if (Fcasio == 2){
-                Finvencasio = Fcasioinven2 ;
-                System.out.print("How many do you want ? >>>>>>>>> ");
-                amount = model.nextInt();  
-                FinvencasioS = Finvencasio - amount ;
-            }
+            System.out.println("");                      
         }while(Fcasio != 1 && Fcasio != 2);
-        
+        System.out.print("How many do you want ? >>>>>>>>> ");
+            amount = model.nextInt();  
             System.out.println("");
             Fsum();
-            super.loop();                               
+            super.loop();                                
     }       
     
     public void Msum(){          

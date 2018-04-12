@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class logincustomer {
     static String UsernameLog ;
     static String PasswordLog ;
-    static String UsernameCus = "admin" ;
-    static String PasswordCus = "1234" ;
+    private String UsernameCus = "admin" ;
+    private String PasswordCus = "1234" ;
     
     logincustomer(){
         System.out.println("===========+++++++++++++++++++++++++++===========");

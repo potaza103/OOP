@@ -19,8 +19,8 @@ public abstract class watch extends inventory {
     int numbermodel;
     static int sex;
     static int want;     
-    ArrayList log  = new  ArrayList();
-    void watchshow(){  
+    
+    public void watchshow(){  
         System.out.println("========================================================");
         System.out.println("                 Welcome To Watch Store                 ");
         System.out.println("========================================================");             
@@ -43,7 +43,7 @@ public abstract class watch extends inventory {
         }
         else {           
         allsum = allsum+sumprice;
-        System.out.println("============================ Bill ================================"); 
+        System.out.println("============================ Bill ================================");
         all all = new all();
         all.print();
         System.out.println(""+Mrado);
@@ -52,7 +52,7 @@ public abstract class watch extends inventory {
     }
         
  }
-      
+     
     public abstract void print();
        
 }

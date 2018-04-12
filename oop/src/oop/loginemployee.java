@@ -8,10 +8,10 @@ public class loginemployee {
     static String PasswordEmpStr ;
     static String UsernameLogEmp ;
     static String PasswordLogEmp ;       
-    static String UsernameLogEmp1 = "Aom" ;
-    static String PasswordLogEmp1 = "1234" ;
-    static String UsernameLogEmp2 = "Pota" ;
-    static String PasswordLogEmp2 = "1234" ;
+    private String UsernameLogEmp1 = "Aom" ;
+    private String PasswordLogEmp1 = "1234" ;
+    private String UsernameLogEmp2 = "Pota" ;
+    private String PasswordLogEmp2 = "1234" ;
     static int member;
     
     loginemployee(){
