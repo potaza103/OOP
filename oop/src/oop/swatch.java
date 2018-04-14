@@ -39,8 +39,8 @@ public class swatch extends watch implements gender,qualities{
         Scanner model = new Scanner(System.in);
          do{
             System.out.println("Please select a model Male");
-            System.out.println("Enter Number : 1 for "+Mswatch1+" Price: "+MPswatch1+" >>Inventory " + Mswatchinven1 );
-            System.out.println("Enter Number : 2 for "+Mswatch2+" Price: "+MPswatch2+" >>Inventory " + Mswatchinven2 );
+            System.out.println("Enter Number : 1 for "+swatch1+" Price: "+MPswatch1+" >>Inventory " + Mswatchinven1 );
+            System.out.println("Enter Number : 2 for "+swatch2+" Price: "+MPswatch2+" >>Inventory " + Mswatchinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mswatch = model.nextInt(); 
             System.out.println("");
@@ -56,8 +56,8 @@ public class swatch extends watch implements gender,qualities{
         Scanner model = new Scanner(System.in);
         do{
             System.out.println("Please select a model Female");
-            System.out.println("Enter Number : 1 for "+Fswatch1+" Price : "+FPswatch1+" >>Inventory : " + Fswatchinven1 );
-            System.out.println("Enter Number : 2 for "+Fswatch2+" Price : "+FPswatch2+" >>Inventory : " + Fswatchinven2 );
+            System.out.println("Enter Number : 1 for "+swatch1+" Price : "+FPswatch1+" >>Inventory : " + Fswatchinven1 );
+            System.out.println("Enter Number : 2 for "+swatch2+" Price : "+FPswatch2+" >>Inventory : " + Fswatchinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
             Fswatch = model.nextInt(); 
             System.out.println("");
@@ -73,12 +73,12 @@ public class swatch extends watch implements gender,qualities{
             System.out.println("=============================== Show Detail ===============================");                      
             if(Mswatch == 1){           
             sumprice = MPswatch1 * amount;
-                System.out.println("Male "+Mswatch1+" amount : "+amount+" Price : "+sumprice);
+                System.out.println("Male "+swatch1+" amount : "+amount+" Price : "+sumprice);
                 Mswatchinven1 = Mswatchinven1-amount;
             }       
             else{           
             sumprice = MPswatch2 * amount;
-                System.out.println("Male "+Mswatch2+" amount : "+amount+" Price : "+sumprice);
+                System.out.println("Male "+swatch2+" amount : "+amount+" Price : "+sumprice);
                 Mswatchinven2 = Mswatchinven2-amount;
             }             
             System.out.println("===========================================================================");
@@ -88,12 +88,12 @@ public class swatch extends watch implements gender,qualities{
             System.out.println("============================== Show Detail ================================");
             if(Fswatch == 1) {
             sumprice = FPswatch1* amount;
-                System.out.println("Female "+Fswatch1+" amount : "+amount+" Price : "+sumprice);
+                System.out.println("Female "+swatch1+" amount : "+amount+" Price : "+sumprice);
                 Fswatchinven1 = Fswatchinven1-amount;
             } 
             else{              
             sumprice = FPswatch2 * amount;
-                System.out.println("Female "+Fswatch2+" amount : "+amount+" Price : "+sumprice);
+                System.out.println("Female "+swatch2+" amount : "+amount+" Price : "+sumprice);
                 Fswatchinven2 = Fswatchinven2-amount;
             } 
             System.out.println("===========================================================================");

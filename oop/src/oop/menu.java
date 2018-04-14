@@ -31,7 +31,7 @@ public class menu extends watch {
             rolex.rolexshow(); 
         }else if (numbermodel==4){
             swatch.swatchshow();              
-        }else {          
+        }else if (numbermodel==5){          
             rado.radoshow();
         }
     }

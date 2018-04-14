@@ -39,8 +39,8 @@ public class rado extends watch implements gender,qualities  {
         Scanner model = new Scanner(System.in);
          do{
             System.out.println("Please select a model Male");
-            System.out.println("Enter Number : 1 for "+Mrado1+" Price: "+MPrado1+" >>Inventory " + Mradoinven1 );
-            System.out.println("Enter Number : 2 for "+Mrado2+" Price: "+MPrado2+" >>Inventory " + Mradoinven2 );
+            System.out.println("Enter Number : 1 for "+rado1+" Price: "+MPrado1+" >>Inventory " + Mradoinven1 );
+            System.out.println("Enter Number : 2 for "+rado2+" Price: "+MPrado2+" >>Inventory " + Mradoinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mrado = model.nextInt(); 
             System.out.println("");
@@ -56,8 +56,8 @@ public class rado extends watch implements gender,qualities  {
         Scanner model = new Scanner(System.in);
         do{
             System.out.println("Please select a model Female");
-            System.out.println("Enter Number : 1 for "+Frado1+" Price : "+FPrado1+" >>Inventory : " + Fradoinven1 );
-            System.out.println("Enter Number : 2 for "+Frado2+" Price : "+FPrado2+" >>Inventory : " + Fradoinven2 );
+            System.out.println("Enter Number : 1 for "+rado1+" Price : "+FPrado1+" >>Inventory : " + Fradoinven1 );
+            System.out.println("Enter Number : 2 for "+rado2+" Price : "+FPrado2+" >>Inventory : " + Fradoinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
             Frado = model.nextInt(); 
             System.out.println("");
@@ -74,12 +74,12 @@ public class rado extends watch implements gender,qualities  {
             System.out.println("=============================== Show Detail ===============================");                      
             if(Mrado == 1){           
             sumprice = MPrado1 * amount;
-                System.out.println("Male "+Mrado1+" amount : "+amount+" Price : "+sumprice);
+                System.out.println("Male "+rado1+" amount : "+amount+" Price : "+sumprice);
                 
             }       
             else{           
             sumprice = MPrado2 * amount;
-                System.out.println("Male "+Mrado2+" amount : "+amount+" Price : "+sumprice);              
+                System.out.println("Male "+rado2+" amount : "+amount+" Price : "+sumprice);              
             }           
             System.out.println("===========================================================================");
             System.out.println("");                   
@@ -88,11 +88,11 @@ public class rado extends watch implements gender,qualities  {
             System.out.println("=============================== Show Detail ===============================");
             if(Frado == 1) {
             sumprice = FPrado1* amount;
-                System.out.println("Female "+Frado1+" amount : "+amount+" Price : "+sumprice);              
+                System.out.println("Female "+rado1+" amount : "+amount+" Price : "+sumprice);              
             } 
             else{              
             sumprice = FPrado2 * amount;
-                System.out.println("Female "+Frado2+" amount : "+amount+" Price : "+sumprice);              
+                System.out.println("Female "+rado2+" amount : "+amount+" Price : "+sumprice);              
             } 
             System.out.println("===========================================================================");
             System.out.println("");                   

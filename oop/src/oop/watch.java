@@ -1,6 +1,6 @@
 package oop;
 import java.util.Scanner;
-public abstract class watch extends inventory {      
+public abstract class watch extends inventory {   
     static int Mcasio;   
     static int Fcasio;
     static int Momega;
@@ -20,7 +20,7 @@ public abstract class watch extends inventory {
     private String a;
     
     watch(){
-        System.out.println("                 Welcome To Watch Store                 ");
+        
     }
     
     public void loop(){
@@ -42,7 +42,6 @@ public abstract class watch extends inventory {
         System.out.println("============================ Bill ================================");
         all all = new all();
         all.print();
-        System.out.println(""+Mrado);
         System.out.println("...................Summary Price : "+allsum+".....................");
         System.out.println("==================================================================");   
     }

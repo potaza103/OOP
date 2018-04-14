@@ -33,7 +33,7 @@ public class Project {
             if(member ==1){
                 loginemployee.loginFixEmp();
                 menu menu = new menu(); 
-                menu.print();  
+                menu.print();                
             }else if(member ==2) {
                 loginemployee.singinEmp();
                 System.out.println("********Again, to confirm yourself.*********");
