@@ -48,8 +48,7 @@ public class rado extends watch implements gender,qualities  {
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();
             System.out.println("");
-            Msum();
-            super.loop();           
+            Msum();           
     }
     
    public void FemaleQualities(){
@@ -65,8 +64,7 @@ public class rado extends watch implements gender,qualities  {
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();  
             System.out.println("");
-            Fsum();
-            super.loop();                               
+            Fsum();                               
     }
    
    public void Msum(){
@@ -75,11 +73,12 @@ public class rado extends watch implements gender,qualities  {
             if(Mrado == 1){           
             sumprice = MPrado1 * amount;
                 System.out.println("Male "+rado1+" amount : "+amount+" Price : "+sumprice);
-                
+            Mradoinven1 = Mradoinven1 - amount;    
             }       
             else{           
             sumprice = MPrado2 * amount;
-                System.out.println("Male "+rado2+" amount : "+amount+" Price : "+sumprice);              
+                System.out.println("Male "+rado2+" amount : "+amount+" Price : "+sumprice); 
+            Mradoinven2 = Mradoinven2 - amount;
             }           
             System.out.println("===========================================================================");
             System.out.println("");                   
@@ -88,11 +87,13 @@ public class rado extends watch implements gender,qualities  {
             System.out.println("=============================== Show Detail ===============================");
             if(Frado == 1) {
             sumprice = FPrado1* amount;
-                System.out.println("Female "+rado1+" amount : "+amount+" Price : "+sumprice);              
+                System.out.println("Female "+rado1+" amount : "+amount+" Price : "+sumprice);
+            Fradoinven1 = Fradoinven1 - amount;
             } 
             else{              
             sumprice = FPrado2 * amount;
-                System.out.println("Female "+rado2+" amount : "+amount+" Price : "+sumprice);              
+                System.out.println("Female "+rado2+" amount : "+amount+" Price : "+sumprice);
+            Fradoinven2 = Fradoinven2 - amount;
             } 
             System.out.println("===========================================================================");
             System.out.println("");                   

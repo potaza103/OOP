@@ -22,32 +22,7 @@ public abstract class watch extends inventory {
     watch(){
         
     }
-    
-    public void loop(){
-        do{       
-            System.out.println("Do you want Watch Store Enter 1");
-            System.out.println("Do you want Check bill  Enter 2");
-            System.out.print("Enter Number : >>>>>>>>>> ");            
-            Scanner want1 = new Scanner(System.in);
-            want = want1.nextInt();
-            System.out.println("");           
-        }while(want !=1 && want !=2);   
-        if(want == 1){           
-            allsum =allsum+sumprice;          
-            menu menu = new menu();
-            menu.print();         
-        }
-        else {           
-        allsum = allsum+sumprice;
-        System.out.println("============================ Bill ================================");
-        all all = new all();
-        all.print();
-        System.out.println("...................Summary Price : "+allsum+".....................");
-        System.out.println("==================================================================");   
-    }
         
- }
-     
     public abstract void print();
 
     

@@ -163,6 +163,8 @@ public class item extends watch {
            print();            
         }
            System.out.println("================== THANK YOU ====================");
+           System.out.println("=================================================");
+           System.out.println("");
     }
        
         

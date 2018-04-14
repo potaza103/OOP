@@ -22,7 +22,7 @@ public class menu extends watch {
             numbermodel = a.nextInt();
         }while(numbermodel != 1&& numbermodel != 2&& numbermodel != 3&& numbermodel != 4&& numbermodel !=5 );
             System.out.println("");
-        
+            
         if(numbermodel==1){                 
             casio.casioshow();
         }else if (numbermodel==2){
@@ -34,8 +34,28 @@ public class menu extends watch {
         }else if (numbermodel==5){          
             rado.radoshow();
         }
+        do{       
+            System.out.println("Do you want Watch Store Enter 1");
+            System.out.println("Do you want Check bill  Enter 2");
+            System.out.print("Enter Number : >>>>>>>>>> ");            
+            Scanner want1 = new Scanner(System.in);
+            want = want1.nextInt();
+            System.out.println("");           
+        }while(want !=1 && want !=2);   
+        if(want == 1){           
+            allsum =allsum+sumprice;          
+            print();         
+        }
+        else {           
+        allsum = allsum+sumprice;
+        System.out.println("============================ Bill ================================");
+        all all = new all();
+        all.print();
+        System.out.println("...................Summary Price : "+allsum+".....................");
+        System.out.println("==================================================================");
     }
-     
+    }
+    
     public void goods(){
         
     }

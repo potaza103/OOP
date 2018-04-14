@@ -1,65 +1,44 @@
 package oop;
 import java.util.Scanner;
-import java.util.ArrayList;
-public class loginemployee {
-    static String UsernameEmp ;
-    static String PasswordEmp ;
-    static String UsernameEmpStr ;
-    static String PasswordEmpStr ;
-    static String UsernameLogEmp ;
-    static String PasswordLogEmp ;       
-    private String UsernameLogEmp1 = "Aom" ;
-    private String PasswordLogEmp1 = "1234" ;
-    private String UsernameLogEmp2 = "Pota" ;
-    private String PasswordLogEmp2 = "1234" ;
-    static int member;
+//import  java.util.ArrayList;
+public class loginemployee {    
+    static String UsernameLog ;
+    static String PasswordLog ;
+    private String UsernameEmp ;
+    private String PasswordEmp ;
     
-    loginemployee(){
+    loginemployee(String UsernameEmp,String PasswordEmp){
+        this();
+        this.UsernameEmp = UsernameEmp;
+        this.PasswordEmp = PasswordEmp;
+    }
+    loginemployee(){         
+        System.out.println("===========+++++++++++++++++++++++++++===========");
+        System.out.println("==============WELLCOME TO WATCH STORE============");
+        System.out.println("===========+++++++++++++++++++++++++++===========");
+    }
+    public void loginemp(){
+//        ArrayList log  = new  ArrayList();
         System.out.println("===========***************************===========");
         System.out.println("====================EMPLOYEE=====================");
         System.out.println("===========***************************===========");
-    }
-    
-        public void singinEmp(){
+    do{
         Scanner LoginEmployee = new Scanner(System.in);
-        ArrayList log2  = new  ArrayList();
-        
-        do {
-        
-        System.out.println("Please Singin");
-        System.out.print("Username >>>>> ");
-        UsernameEmp = LoginEmployee.nextLine();
-        log2.add(UsernameEmp);
-        System.out.print("Password >>>>> ");
-        PasswordEmp = LoginEmployee.nextLine();
-        log2.add(PasswordEmp);
-        UsernameEmpStr = (String) log2.get(0); 
-        PasswordEmpStr = (String) log2.get(1);
-        } while (!(UsernameEmp.equals(UsernameEmpStr) && PasswordEmp.equals(PasswordEmpStr)));
-        
-        }
-    
-    public void loginEmp(){
-        Scanner LoginEmployee = new Scanner(System.in);
-        do{
         System.out.println("Please Login");
         System.out.print("Username >>>>> ");
-        UsernameEmp = LoginEmployee.nextLine();
+        UsernameLog = LoginEmployee.nextLine();
+//        log.add(UsernameLog);
         System.out.print("Password >>>>> ");
-        PasswordEmp= LoginEmployee.nextLine();
-        } while (!(UsernameEmp.equals(UsernameEmpStr) && PasswordEmp.equals(PasswordEmpStr)));
+        PasswordLog = LoginEmployee.nextLine();
+//        log.add(PasswordLog);
+        
+//        System.out.println(log.size());
+    }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));   
+        item item = new item();
+        item.print();
+        login login = new login();
+        login.loginstore();
     }
     
-    public void loginFixEmp(){
-        Scanner LoginFixEmployee = new Scanner(System.in);
-        do{
-        System.out.println("Please Login");
-        System.out.print("Username >>>>> ");
-        UsernameLogEmp = LoginFixEmployee.nextLine();
-        System.out.print("Password >>>>> ");
-        PasswordLogEmp = LoginFixEmployee.nextLine();
-        }while (!(UsernameLogEmp1.equals(UsernameLogEmp) && PasswordLogEmp1.equals(PasswordLogEmp))
-             && !(UsernameLogEmp2.equals(UsernameLogEmp) && PasswordLogEmp2.equals(PasswordLogEmp)));
-        
-    }
+    
 }

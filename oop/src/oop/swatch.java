@@ -48,8 +48,7 @@ public class swatch extends watch implements gender,qualities{
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();
             System.out.println("");
-            Msum();
-            super.loop();           
+            Msum();          
     }
     
    public void FemaleQualities(){
@@ -65,8 +64,7 @@ public class swatch extends watch implements gender,qualities{
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();  
             System.out.println("");
-            Fsum();
-            super.loop();                               
+            Fsum();                              
     }
    
    public void Msum(){          

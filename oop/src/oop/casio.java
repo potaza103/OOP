@@ -49,7 +49,7 @@ public class casio extends watch implements gender,qualities {
             amount = model.nextInt();          
             System.out.println("");
             Msum();           
-            super.loop();          
+//            super.loop();          
     }
     
    public void FemaleQualities(){
@@ -66,7 +66,7 @@ public class casio extends watch implements gender,qualities {
             amount = model.nextInt();  
             System.out.println("");
             Fsum();
-            super.loop();                                
+//            super.loop();                                
     }       
     
     public void Msum(){          
