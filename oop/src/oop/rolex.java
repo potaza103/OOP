@@ -1,6 +1,7 @@
 package oop;
 import java.util.Scanner;
-public class rolex extends watch implements gender,qualities{    
+public class rolex extends watch implements gender,qualities{ 
+//public class rolex extends inventory  implements gender,qualities{
     
     public void rolexshow(){
         System.out.println("========================================================");

@@ -1,6 +1,6 @@
 package oop;
 import java.util.Scanner;
-public class loginemployee extends item {    
+public class loginemployee {    
     static String UsernameLog ;
     static String PasswordLog ;
     private String UsernameEmp ;

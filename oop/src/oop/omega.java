@@ -1,6 +1,8 @@
 package oop;
 import java.util.Scanner;
 public class omega extends watch implements gender,qualities {      
+//public class omega extends inventory  implements gender,qualities{
+    
     
     public void omegashow(){
         System.out.println("========================================================");

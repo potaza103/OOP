@@ -1,6 +1,7 @@
 package oop;
 import java.util.Scanner;
-public abstract class watch {   
+public abstract class watch extends inventory {  
+    
     static int Mcasio;   
     static int Fcasio;
     static int Momega;
@@ -18,6 +19,12 @@ public abstract class watch {
     static int sex;
     static int want;
     private String a;
+    
+    watch(){
+        System.out.println("======");
+        
+    }
+    
     public abstract void print();
 }
 

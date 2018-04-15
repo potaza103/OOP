@@ -1,6 +1,6 @@
 package oop;
-
-public class all extends watch{     
+public class all extends watch{  
+//public class all extends inventory{     
     public void print() {                                         
         if(Mcasio == 1){            
             sumprice = MPcasio1 * amount;
