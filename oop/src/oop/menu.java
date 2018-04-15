@@ -44,7 +44,7 @@ public class menu extends watch {
         }while(want !=1 && want !=2);   
         if(want == 1){           
             allsum =allsum+sumprice;          
-            print();         
+            this.print();         
         }
         else {           
         allsum = allsum+sumprice;
@@ -55,11 +55,10 @@ public class menu extends watch {
         System.out.println("==================================================================");
     }
     }
-    
-    public void goods(){
+  
+   public void goods(){
         
     }
-   
 }
     
 

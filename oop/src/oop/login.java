@@ -4,8 +4,14 @@ public class login {
     static int member;
     static int select;
     
+    login(){
+        System.out.println("  ================+++++++++++++++++++++++++++===========");
+        System.out.println("====================WELLCOME TO WATCH STORE===============");
+       
+    }
+    
     public void loginstore(){
-    loginemployee loginemployee = new loginemployee("admin","1234");      
+        loginemployee loginemployee = new loginemployee("admin","1234");      
         do{
             System.out.println("Please select your identity");
             System.out.println("Press 1 : Customer   ");

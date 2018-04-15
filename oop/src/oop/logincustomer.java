@@ -25,7 +25,6 @@ public class logincustomer {
         ArrayList log2  = new  ArrayList();
         
         do {
-        
         System.out.println("Please Singin");
         System.out.print("Username >>>>> ");
         UsernameCus = LoginCustomer.nextLine();

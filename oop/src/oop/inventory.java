@@ -1,5 +1,11 @@
 package oop;
-public abstract class inventory  {   
+public abstract class inventory  {  
+    
+    inventory(){
+        System.out.println("========================================================");
+        System.out.println("               Inventory of Watch Store                 ");
+        System.out.println("========================================================");
+    }
        
 //    Casio
     String casio1 = "Casio Standard Gent AW-90H-2BVDF";
@@ -60,7 +66,6 @@ public abstract class inventory  {
     int MPrado2 = 11600;   
     int Fradoinven2 = 10;
     int FPrado2 = 11500;
-       
-    public abstract void goods();
+    
     
 }
