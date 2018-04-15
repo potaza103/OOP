@@ -83,9 +83,7 @@ public class all extends watch{
                 System.out.println("Female "+rado2+" amount : "+amount+" Price : "+sumprice);              
             } 
         }
-    public void goods() {
-        
-    }
+    
    
 
 }

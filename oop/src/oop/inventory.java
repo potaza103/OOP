@@ -67,4 +67,5 @@ public abstract class inventory  {
     int Fradoinven2 = 10;
     int FPrado2 = 11500;
     
+    public abstract void print();
 }

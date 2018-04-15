@@ -11,6 +11,10 @@ public class Project {
         System.out.println("========================================================"); 
         
         for(int i = 1 ; i <= round ; i++){
+            System.out.println(""
+                    + ""); 
+            System.out.println("round >>>>>>>>>>>"+ i );
+            System.out.println(""); 
             login login = new login();
             login.loginstore();
         }

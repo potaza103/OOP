@@ -7,7 +7,6 @@ public class login {
     login(){
         System.out.println("  ================+++++++++++++++++++++++++++===========");
         System.out.println("====================WELLCOME TO WATCH STORE===============");
-       
     }
     
     public void loginstore(){
@@ -22,33 +21,33 @@ public class login {
         }while (select != 1 && select != 2);
             System.out.println("");
         
-        if(select == 1){
-            logincustomer logincustomer = new logincustomer();
-            do{
-                System.out.println("Are you a member");
-                System.out.println("Press 1 to login   ");
-                System.out.println("Press 2 to singin  ");
-                System.out.print("Press Enter Number  >>>>> ");
-                Scanner are_member = new Scanner(System.in);
-                member = are_member.nextInt();
-            }while (member != 1 && member != 2);
+            if(select == 1){
+                logincustomer logincustomer = new logincustomer();
+                do{
+                    System.out.println("Are you a member");
+                    System.out.println("Press 1 to login   ");
+                    System.out.println("Press 2 to singin  ");
+                    System.out.print("Press Enter Number  >>>>> ");
+                    Scanner are_member = new Scanner(System.in);
+                    member = are_member.nextInt();
+                }while (member != 1 && member != 2);
                 System.out.println("");
         
-            if(member ==1){
-                logincustomer.loginFixCus();
-                menu menu = new menu(); 
-                menu.print();                
-            }else if(member ==2) {
-                logincustomer.singinCus();
-                System.out.println("********Again, to confirm yourself.*********");
-                logincustomer.loginCus();
-                menu menu = new menu(); 
-                menu.print();  
-            }
+                    if(member ==1){
+                        logincustomer.loginFixCus();
+                        menu menu = new menu(); 
+                        menu.print();                
+                    }else if(member ==2) {
+                        logincustomer.singinCus();
+                        System.out.println("********Again, to confirm yourself.*********");
+                        logincustomer.loginCus();
+                        menu menu = new menu(); 
+                        menu.print();  
+                    }
                 System.out.println("******************************************************************"); 
-        }else if(select == 2){ 
+        
+            }else if(select == 2){ 
                 loginemployee.loginemp();
             }
-    
-}
+    }
 }

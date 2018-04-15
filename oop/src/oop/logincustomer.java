@@ -2,6 +2,7 @@ package oop;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class logincustomer {
+    
     static String UsernameCus ;
     static String PasswordCus ;
     static String UsernameCusStr ;
@@ -20,21 +21,21 @@ public class logincustomer {
         System.out.println("    ===========***************************===========");
     }
     
-        public void singinCus(){
-            Scanner LoginCustomer = new Scanner(System.in);
-            ArrayList log  = new  ArrayList();
-            do {
-                System.out.println("Please Singin");
-                System.out.print("Username >>>>> ");
-                UsernameCus = LoginCustomer.nextLine();
-                log.add(UsernameCus);
-                System.out.print("Password >>>>> ");
-                PasswordCus = LoginCustomer.nextLine();
-                log.add(PasswordCus);
-                UsernameCusStr = (String)log.get(0); 
-                PasswordCusStr = (String)log.get(1);
-            } while (!(UsernameCus.equals(UsernameCusStr) && PasswordCus.equals(PasswordCusStr)));
-        }
+    public void singinCus(){
+        Scanner LoginCustomer = new Scanner(System.in);
+        ArrayList log  = new  ArrayList();
+        do {
+            System.out.println("Please Singin");
+            System.out.print("Username >>>>> ");
+            UsernameCus = LoginCustomer.nextLine();
+            log.add(UsernameCus);
+            System.out.print("Password >>>>> ");
+            PasswordCus = LoginCustomer.nextLine();
+            log.add(PasswordCus);
+            UsernameCusStr = (String)log.get(0); 
+            PasswordCusStr = (String)log.get(1);
+        } while (!(UsernameCus.equals(UsernameCusStr) && PasswordCus.equals(PasswordCusStr)));
+    }
     
     public void loginCus(){
         Scanner LoginEmployee = new Scanner(System.in);

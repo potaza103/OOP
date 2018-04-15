@@ -23,17 +23,18 @@ public class menu extends watch {
         }while(numbermodel != 1&& numbermodel != 2&& numbermodel != 3&& numbermodel != 4&& numbermodel !=5 );
             System.out.println("");
             
-        if(numbermodel==1){                 
-            casio.casioshow();
-        }else if (numbermodel==2){
-            omega.omegashow();   
-        }else if (numbermodel==3){             
-            rolex.rolexshow(); 
-        }else if (numbermodel==4){
-            swatch.swatchshow();              
-        }else if (numbermodel==5){          
-            rado.radoshow();
-        }
+            if(numbermodel==1){                 
+                casio.casioshow();
+            }else if (numbermodel==2){
+                omega.omegashow();   
+            }else if (numbermodel==3){             
+                rolex.rolexshow(); 
+            }else if (numbermodel==4){
+                swatch.swatchshow();              
+            }else if (numbermodel==5){          
+                rado.radoshow();
+            }
+        
         do{       
             System.out.println("Do you want Watch Store Enter 1");
             System.out.println("Do you want Check bill  Enter 2");
@@ -42,18 +43,19 @@ public class menu extends watch {
             want = want1.nextInt();
             System.out.println("");           
         }while(want !=1 && want !=2);   
-        if(want == 1){           
-            allsum =allsum+sumprice;          
-            this.print();         
-        }
-        else {           
-        allsum = allsum+sumprice;
-        System.out.println("============================ Bill ================================");
-        all all = new all();
-        all.print();
-        System.out.println("...................Summary Price : "+allsum+".....................");
-        System.out.println("==================================================================");
-        }
+        
+            if(want == 1){           
+                allsum =allsum+sumprice;          
+                this.print();         
+            }
+            else {           
+                allsum = allsum+sumprice;
+                System.out.println("============================ Bill ================================");
+                all all = new all();
+                all.print();
+                System.out.println("...................Summary Price : "+allsum+".....................");
+                System.out.println("==================================================================");
+            }
     }
   
 }

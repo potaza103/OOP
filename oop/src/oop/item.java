@@ -1,8 +1,7 @@
 
 package oop;
 import java.util.Scanner;
-public class item extends inventory {
-    
+public abstract class item extends inventory {
     
     item(){
         super();
@@ -185,11 +184,5 @@ public class item extends inventory {
            System.out.println("===========================================================");
            System.out.println("");
     }
-       
-        
-    public void goods() {
-        
-    }
-    
-    
+     
 }

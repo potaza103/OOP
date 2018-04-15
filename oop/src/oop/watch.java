@@ -1,6 +1,6 @@
 package oop;
 import java.util.Scanner;
-public abstract class watch extends inventory {   
+public abstract class watch {   
     static int Mcasio;   
     static int Fcasio;
     static int Momega;
@@ -18,11 +18,6 @@ public abstract class watch extends inventory {
     static int sex;
     static int want;
     private String a;
-   
-        
     public abstract void print();
-
-    
-       
 }
 
