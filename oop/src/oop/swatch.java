@@ -21,11 +21,7 @@ public class swatch extends watch implements gender,qualities{
         }while(sex !=1 && sex !=2);
         gender();
     }
-     
-    public void goods(){
-        
-    }
-    
+   
     public void gender(){ 
         if(sex == 1){
             MaleQualities();

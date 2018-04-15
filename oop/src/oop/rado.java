@@ -22,10 +22,6 @@ public class rado extends watch implements gender,qualities  {
         gender();
     }
     
-    public void goods(){
-        
-    }
-    
     public void gender(){     
         if(sex == 1){
             MaleQualities();

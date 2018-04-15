@@ -20,9 +20,9 @@ public class loginemployee  {
     
     public void loginemp(){
 //        ArrayList log  = new  ArrayList();
-        System.out.println("===========***************************===========");
-        System.out.println("====================EMPLOYEE=====================");
-        System.out.println("===========***************************===========");
+        System.out.println("    ===========***************************===========");
+        System.out.println("    ====================EMPLOYEE=====================");
+        System.out.println("    ===========***************************===========");
     do{
         Scanner LoginEmployee = new Scanner(System.in);
         System.out.println("Please Login");
@@ -37,6 +37,7 @@ public class loginemployee  {
     }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));  
     
         item item = new item();
+        System.out.println("");
         item.print();
         login login = new login();
         login.loginstore();

@@ -11,7 +11,7 @@ public class menu extends watch {
     public void print() {       
         do{          
             System.out.println("========================================================");
-            System.out.println("                 Welcome To Watch Store                 ");
+            System.out.println("                        Watch Store                     ");
             System.out.println("========================================================");           
             System.out.println("Enter Number 1 : Casio");
             System.out.println("Enter Number 2 : Omega");
@@ -53,12 +53,9 @@ public class menu extends watch {
         all.print();
         System.out.println("...................Summary Price : "+allsum+".....................");
         System.out.println("==================================================================");
-    }
+        }
     }
   
-   public void goods(){
-        
-    }
 }
     
 

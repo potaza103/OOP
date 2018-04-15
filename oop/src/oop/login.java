@@ -20,7 +20,7 @@ public class login {
             Scanner are_member = new Scanner(System.in);
             select = are_member.nextInt();
         }while (select != 1 && select != 2);
-            System.out.println("--------------------------");
+            System.out.println("");
         
         if(select == 1){
             logincustomer logincustomer = new logincustomer();
@@ -32,7 +32,7 @@ public class login {
                 Scanner are_member = new Scanner(System.in);
                 member = are_member.nextInt();
             }while (member != 1 && member != 2);
-                System.out.println("--------------------------");
+                System.out.println("");
         
             if(member ==1){
                 logincustomer.loginFixCus();
