@@ -21,8 +21,7 @@ public abstract class watch extends inventory {
     private String a;
     
     watch(){
-        System.out.println("======");
-        
+        System.out.println("===watch===");
     }
     
     public abstract void print();

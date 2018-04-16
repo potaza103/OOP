@@ -1,6 +1,7 @@
 package oop;
 import java.util.Scanner;
 public class menu extends watch {
+  
     casio casio = new casio();
     rado rado = new rado();
     omega omega = new omega();
@@ -50,11 +51,11 @@ public class menu extends watch {
             }
             else {           
                 allsum = allsum+sumprice;
-                System.out.println("============================ Bill ================================");
+                System.out.println("=================== Bill =======================");
                 all all = new all();
                 all.print();
-                System.out.println("...................Summary Price : "+allsum+".....................");
-                System.out.println("==================================================================");
+                System.out.println("...........Summary Price : "+allsum+"...........");
+                System.out.println("================================================");
             }
     }
   

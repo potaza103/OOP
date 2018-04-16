@@ -3,7 +3,7 @@ public abstract class inventory   {
     
     inventory(){
         System.out.println("========================================================");
-        System.out.println("               Inventory of Watch Store                 ");
+        System.out.println("                       Watch Store                      ");
         System.out.println("========================================================");
     }
 //    static int Mcasio;   
