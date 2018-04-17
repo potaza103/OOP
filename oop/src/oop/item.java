@@ -177,11 +177,12 @@ public  class item extends inventory {
         while("Y".equals(D)||"y".equals(D)){
            System.out.println("");
            this.print();            
-        }
+        }                 
+    }
+    public  void show(){
            System.out.println("");
            System.out.println("======================= THANK YOU =========================");
-           System.out.println("===========================================================");
+           System.out.println("   =====================================================");
            System.out.println("");
     }
-    public  void show(){}
 }

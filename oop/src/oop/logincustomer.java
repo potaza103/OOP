@@ -38,25 +38,29 @@ public class logincustomer {
     }
     
     public void loginCus(){
-        Scanner LoginEmployee = new Scanner(System.in);
-        do{
+        Scanner LoginEmployee = new Scanner(System.in); 
+        do{          
             System.out.println("Please Login");
             System.out.print("Username >>>>> ");
             UsernameCus = LoginEmployee.nextLine();
             System.out.print("Password >>>>> ");
-            PasswordCus= LoginEmployee.nextLine();
+            PasswordCus= LoginEmployee.nextLine();           
         } while (!(UsernameCus.equals(UsernameCusStr) && PasswordCus.equals(PasswordCusStr)));
+       
+        
     }
-    
+       
     public void loginFixCus(){
-        Scanner LoginFixCustomer = new Scanner(System.in);
-        do{
+        Scanner LoginFixCustomer = new Scanner(System.in);                
+        do{            
             System.out.println("Please Login");
             System.out.print("Username >>>>> ");
             UsernameLogCus = LoginFixCustomer.nextLine();
             System.out.print("Password >>>>> ");
-            PasswordLogCus = LoginFixCustomer.nextLine();
+            PasswordLogCus = LoginFixCustomer.nextLine();           
         }while (!(UsernameLogCus1.equals(UsernameLogCus) && PasswordLogCus1.equals(PasswordLogCus))
-             && !(UsernameLogCus2.equals(UsernameLogCus) && PasswordLogCus2.equals(PasswordLogCus)));
+             && !(UsernameLogCus2.equals(UsernameLogCus) && PasswordLogCus2.equals(PasswordLogCus)));           
+           
     }
 }
+
