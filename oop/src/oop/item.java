@@ -3,10 +3,7 @@ package oop;
 import java.util.Scanner;
 public  class item extends inventory {
     
-    item(){
-        super();
-    }
-   
+ 
     public void print() {
         System.out.println("    ===========***************************===========");
         System.out.println("    =================Inventory Status================");

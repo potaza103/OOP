@@ -1,14 +1,13 @@
 package oop;
 import java.util.Scanner;
-public class loginemployee {    
+public class loginemployee  {    
     static String UsernameLog ;
     static String PasswordLog ;
     private String UsernameEmp ;
     private String PasswordEmp ;
     
-    loginemployee(){         
-        System.out.println("================The service is available online===========");
-        System.out.println("  ================+++++++++++++++++++++++++++===========");
+    loginemployee(){
+        System.out.println("  ================+++++++++++++++++++++++++++===========");      
     }
     
     loginemployee(String UsernameEmp,String PasswordEmp){

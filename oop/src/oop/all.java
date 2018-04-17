@@ -1,6 +1,7 @@
 package oop;
 public class all extends watch{  
 //public class all extends inventory{    
+    
     public void print() {       
 //      for(int i=A;i<count;i++){
 //          if(B==1){
@@ -96,9 +97,15 @@ public class all extends watch{
                 System.out.println("Female "+rado2+" amount : "+amount+" Price : "+sumprice);              
             }
           }
+
+    @Override
+    public void show() {
+        
+    }
+}
 //        }  
 //    }
     
-    public  void show(){}
+   
 
-}
+

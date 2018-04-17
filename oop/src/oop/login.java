@@ -1,12 +1,13 @@
 package oop;
 import java.util.Scanner;
-public class login {
+public class login extends loginemployee {
     static int member;
     static int select;
     
     login(){
-        System.out.println("  ================+++++++++++++++++++++++++++===========");
+        super();
         System.out.println("====================WELLCOME TO WATCH STORE===============");
+        System.out.println("================The service is available online===========");
     }
     
     public void loginstore(){

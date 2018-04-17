@@ -3,11 +3,6 @@ import java.util.Scanner;
 public class casio extends watch implements gender,qualities {    
 //public class casio extends inventory implements gender,qualities {    
     
-    casio(){
-       System.out.println("========================================================");
-       System.out.println("                         Casio2                          ");
-       System.out.println("========================================================"); 
-    }
     public void show(){
        System.out.println("========================================================");
        System.out.println("                         Casio                          ");

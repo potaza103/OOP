@@ -1,12 +1,6 @@
 package oop;
 public abstract class inventory   {  
-    
-    inventory(){
-        System.out.println("========================================================");
-        System.out.println("                             |                          ");
-        System.out.println("========================================================");
-    }
-
+      
     String casio1 = "Casio Standard Gent AW-90H-2BVDF";
     int Mcasioinven1 = 12;  
     int MPcasio1 = 125000;

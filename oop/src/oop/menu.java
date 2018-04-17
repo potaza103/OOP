@@ -12,7 +12,7 @@ public class menu extends watch {
     public void print() {       
         do{          
             System.out.println("========================================================");
-            System.out.println("                 Welcome To Watch Store                 ");
+            System.out.println("\t\t Welcome To Watch Store");
             System.out.println("========================================================");           
             System.out.println("Enter Number 1 : Casio");
             System.out.println("Enter Number 2 : Omega");
@@ -24,7 +24,7 @@ public class menu extends watch {
         }while(numbermodel != 1&& numbermodel != 2&& numbermodel != 3&& numbermodel != 4&& numbermodel !=5 );
             System.out.println("");
             
-        if(numbermodel==1){                 
+        if(numbermodel==1){   
             casio.show();
         }else if (numbermodel==2){
             omega.show();   
@@ -51,11 +51,12 @@ public class menu extends watch {
             }
             else {  
                 allsum = allsum+sumprice;
-                System.out.println("==================== Bill ======================");
+                System.out.println("============================ Bill ===============================");
                 all all = new all();
                 all.print();
-                System.out.println("...........Summary Price : "+allsum+"...........");
-                System.out.println("================================================");
+                System.out.println("\t...........Summary Price : "+allsum+"...........");
+                System.out.println("=================================================================");
+                super.thank();
             }
     }
     public  void show(){}
