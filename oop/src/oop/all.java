@@ -84,6 +84,6 @@ public class all extends watch{
             } 
         }
     
-   
+    public  void show(){}
 
 }

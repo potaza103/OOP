@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class rolex extends watch implements gender,qualities{ 
 //public class rolex extends inventory  implements gender,qualities{
     
-    public void rolexshow(){
+    public void show(){
         System.out.println("========================================================");
         System.out.println("                         Rolex                          ");
         System.out.println("========================================================");

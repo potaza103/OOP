@@ -8,7 +8,7 @@ public class casio extends watch implements gender,qualities {
        System.out.println("                         Casio2                          ");
        System.out.println("========================================================"); 
     }
-    public void casioshow(){
+    public void show(){
        System.out.println("========================================================");
        System.out.println("                         Casio                          ");
        System.out.println("========================================================"); 

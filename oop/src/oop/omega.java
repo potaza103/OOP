@@ -4,7 +4,7 @@ public class omega extends watch implements gender,qualities {
 //public class omega extends inventory  implements gender,qualities{
     
     
-    public void omegashow(){
+    public void show(){
         System.out.println("========================================================");
         System.out.println("                         Omega                          ");
         System.out.println("========================================================");

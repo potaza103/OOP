@@ -19,11 +19,6 @@ public abstract class watch extends inventory {
     static int sex;
     static int want;
     private String a;
-    
-    watch(){
-        System.out.println("===watch===");
-    }
-    
     public abstract void print();
 }
 

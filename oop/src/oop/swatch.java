@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class swatch extends watch  implements gender,qualities{
 //public class swatch extends inventory  implements gender,qualities{
     
-    public void swatchshow(){
+    public void show(){
         System.out.println("========================================================");
         System.out.println("                         Swatch                         ");
         System.out.println("========================================================");

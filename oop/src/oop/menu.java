@@ -1,12 +1,13 @@
 package oop;
 import java.util.Scanner;
 public class menu extends watch {
-  
-    casio casio = new casio();
-    rado rado = new rado();
-    omega omega = new omega();
-    rolex rolex = new rolex();
-    swatch swatch = new swatch();
+    
+    watch w ;
+   // casio casio = new casio();
+   // rado rado = new rado();
+   // omega omega = new omega();
+   // rolex rolex = new rolex();
+   // swatch swatch = new swatch();
     Scanner a = new Scanner(System.in);
     
     public void print() {       
@@ -24,18 +25,23 @@ public class menu extends watch {
         }while(numbermodel != 1&& numbermodel != 2&& numbermodel != 3&& numbermodel != 4&& numbermodel !=5 );
             System.out.println("");
             
-            if(numbermodel==1){                 
-                casio.casioshow();
+            if(numbermodel==1){
+                w = new casio();
+                w.show();
             }else if (numbermodel==2){
-                omega.omegashow();   
-            }else if (numbermodel==3){             
-                rolex.rolexshow(); 
+                w = new omega();
+                w.show();   
+            }else if (numbermodel==3){
+                w = new rolex();
+                w.show(); 
             }else if (numbermodel==4){
-                swatch.swatchshow();              
-            }else if (numbermodel==5){          
-                rado.radoshow();
+                w = new swatch();
+                w.show();              
+            }else if (numbermodel==5){
+                w = new rado();
+                w.show();
             }
-        
+           
         do{       
             System.out.println("Do you want Watch Store Enter 1");
             System.out.println("Do you want Check bill  Enter 2");
@@ -58,6 +64,7 @@ public class menu extends watch {
                 System.out.println("================================================");
             }
     }
+    public  void show(){}
   
 }
     

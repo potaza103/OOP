@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class rado extends watch implements gender,qualities  {   
 //public class rado extends inventory  implements gender,qualities{
     
-    public void radoshow(){
+    public void show(){
         System.out.println("========================================================");
         System.out.println("                          Rado                          ");
         System.out.println("========================================================");

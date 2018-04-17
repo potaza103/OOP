@@ -186,5 +186,5 @@ public  class item extends inventory {
            System.out.println("===========================================================");
            System.out.println("");
     }
-     
+    public  void show(){}
 }
