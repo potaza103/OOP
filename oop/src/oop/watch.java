@@ -20,10 +20,9 @@ public abstract class watch extends inventory {
     static int want;
     static int A,B,C;
     static int count=1;
-    
+    static String E;
     public void thank(){      
-        System.out.println("   ======================= THANK YOU  ========================");
-        System.out.println("        =================================================");
+        System.out.println("   ======================= THANK YOU  ========================");      
     }
     public abstract void print();
 }

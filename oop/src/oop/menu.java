@@ -8,7 +8,7 @@ public class menu extends watch {
     rolex rolex = new rolex();
     swatch swatch = new swatch();
     Scanner a = new Scanner(System.in);
-    
+     
     public void print() {       
         do{          
             System.out.println("========================================================");
@@ -56,6 +56,11 @@ public class menu extends watch {
                 all.print();
                 System.out.println("\t...........Summary Price : "+allsum+"...........");
                 System.out.println("=================================================================");
+                do{
+                Scanner put = new Scanner(System.in);
+                System.out.println("Do you want to exit ? (Y/N)");               
+                E = put.nextLine();               
+                }while("Y".equals(E)||"y".equals(E));
                 super.thank();
             }
     }
