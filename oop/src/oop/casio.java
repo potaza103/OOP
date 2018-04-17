@@ -50,12 +50,34 @@ public class casio extends watch implements gender,qualities {
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mcasio = model.nextInt(); 
             System.out.println("");          
-        }while(Mcasio != 1 && Mcasio != 2);
+        }while(Mcasio != 1 && Mcasio != 2);        
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();          
             System.out.println("");
-            Msum();           
-//            super.loop();          
+            if(Mcasio == 1){
+                    if(Mcasioinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            } 
+            }
+            if(Mcasio == 2){
+                    if(Mcasioinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            }
+            }
     }
     
    public void FemaleQualities(){
@@ -71,15 +93,37 @@ public class casio extends watch implements gender,qualities {
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();  
             System.out.println("");
-            Fsum();
-//            super.loop();                                
+            if(Fcasio == 1){
+                    if(Fcasioinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            } 
+            }
+            if(Fcasio == 2){
+                    if(Fcasioinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            }
+            }                                                   
     }       
     
     public void Msum(){          
             System.out.println("=============================== Show Detail ===============================");                      
             if(Mcasio == 1){            
-            sumprice = MPcasio1 * amount;
-                System.out.println("Male "+casio1+" amount : "+amount+" Price : "+sumprice); 
+            sumprice = MPcasio1 * amount;           
+                System.out.println("Male "+casio1+" amount : "+amount+" Price : "+sumprice);                
                 Mcasioinven1 = Mcasioinven1 - amount;
             }
             else{            
@@ -89,7 +133,7 @@ public class casio extends watch implements gender,qualities {
             }              
             System.out.println("===========================================================================");
             System.out.println("");
-            
+            B=1;
         }
     
     public void Fsum(){
@@ -106,6 +150,6 @@ public class casio extends watch implements gender,qualities {
             }
             System.out.println("===========================================================================");
             System.out.println(""); 
-                   
+            B=1;      
     }
 }

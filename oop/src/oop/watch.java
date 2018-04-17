@@ -18,7 +18,8 @@ public abstract class watch extends inventory {
     int numbermodel;
     static int sex;
     static int want;
-    private String a;
+    static int A,B,C;
+    static int count=1;
     public abstract void print();
 }
 

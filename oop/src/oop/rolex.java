@@ -45,7 +45,30 @@ public class rolex extends watch implements gender,qualities{
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();
             System.out.println("");
-            Msum();           
+            if(Mrolex == 1){
+                    if(Mrolexinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            } 
+            }
+            if(Mrolex == 2){
+                    if(Mrolexinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            }
+            }           
     }
     
    public void FemaleQualities(){
@@ -61,7 +84,30 @@ public class rolex extends watch implements gender,qualities{
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();  
             System.out.println("");
-            Fsum();                              
+            if(Frolex == 1){
+                    if(Frolexinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            } 
+            }
+            if(Frolex == 2){
+                    if(Frolexinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            }
+            }                              
     }
    
    public void Msum(){          
@@ -77,7 +123,8 @@ public class rolex extends watch implements gender,qualities{
                 Mradoinven2 = Mradoinven2-amount;
             }             
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println("");  
+            B=3;
         }
    public void Fsum(){
             System.out.println("=============================== Show Detail ===============================");
@@ -92,6 +139,7 @@ public class rolex extends watch implements gender,qualities{
                 Fradoinven2 = Fradoinven2-amount;
             } 
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println("");    
+            B=3;
    }   
 }

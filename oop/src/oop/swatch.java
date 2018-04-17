@@ -45,7 +45,30 @@ public class swatch extends watch  implements gender,qualities{
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();
             System.out.println("");
-            Msum();          
+            if(Mswatch == 1){
+                    if(Mswatchinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            } 
+            }
+            if(Mswatch == 2){
+                    if(Mswatchinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            }
+            }          
     }
     
    public void FemaleQualities(){
@@ -61,7 +84,30 @@ public class swatch extends watch  implements gender,qualities{
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();  
             System.out.println("");
-            Fsum();                              
+            if(Fswatch == 1){
+                    if(Fswatchinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            } 
+            }
+            if(Fswatch == 2){
+                    if(Fswatchinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            }
+            }                              
     }
    
    public void Msum(){          
@@ -77,7 +123,8 @@ public class swatch extends watch  implements gender,qualities{
                 Mswatchinven2 = Mswatchinven2-amount;
             }             
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println(""); 
+            B=4;
         }
    public void Fsum(){
             System.out.println("============================== Show Detail ================================");
@@ -92,6 +139,7 @@ public class swatch extends watch  implements gender,qualities{
                 Fswatchinven2 = Fswatchinven2-amount;
             } 
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println("");
+            B=4;
    }     
 }

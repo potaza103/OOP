@@ -29,7 +29,21 @@ public class loginemployee {
             UsernameLog = LoginEmployee.nextLine();
             System.out.print("Password >>>>> ");
             PasswordLog = LoginEmployee.nextLine();
-        }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));  
+            if((UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))){
+                System.out.println("You not Employee");
+                System.out.println("Prease login for assure");
+                for(int i = 0 ; i >= 2 ; i ++){
+                    do{
+                        System.out.println("Please Login");
+                        System.out.print("Username >>>>> ");
+                        UsernameLog = LoginEmployee.nextLine();
+                        System.out.print("Password >>>>> ");
+                        PasswordLog = LoginEmployee.nextLine(); 
+                    }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));
+                } 
+            }
+            
+        }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))); 
     
         item item = new item();
         System.out.println("");

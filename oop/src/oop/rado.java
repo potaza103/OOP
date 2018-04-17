@@ -45,7 +45,30 @@ public class rado extends watch implements gender,qualities  {
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();
             System.out.println("");
-            Msum();           
+            if(Mrado == 1){
+                    if(Mradoinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            } 
+            }
+            if(Mrado == 2){
+                    if(Mradoinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            }
+            }            
     }
     
    public void FemaleQualities(){
@@ -61,7 +84,30 @@ public class rado extends watch implements gender,qualities  {
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();  
             System.out.println("");
-            Fsum();                               
+            if(Frado == 1){
+                    if(Fradoinven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            } 
+            }
+            if(Frado == 2){
+                    if(Fradoinven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            }
+            }                               
     }
    
    public void Msum(){
@@ -78,7 +124,8 @@ public class rado extends watch implements gender,qualities  {
             Mradoinven2 = Mradoinven2 - amount;
             }           
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println(""); 
+            B=5;
         }
    public void Fsum(){
             System.out.println("=============================== Show Detail ===============================");
@@ -93,6 +140,7 @@ public class rado extends watch implements gender,qualities  {
             Fradoinven2 = Fradoinven2 - amount;
             } 
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println("");
+            B=5;
    }   
 }

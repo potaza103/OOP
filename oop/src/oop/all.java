@@ -1,7 +1,9 @@
 package oop;
 public class all extends watch{  
-//public class all extends inventory{     
-    public void print() {                                         
+//public class all extends inventory{    
+    public void print() {       
+//      for(int i=A;i<count;i++){
+//          if(B==1){
         if(Mcasio == 1){            
             sumprice = MPcasio1 * amount;
                 System.out.println("Male "+casio1+" amount : "+amount+" Price : "+sumprice);                
@@ -18,7 +20,10 @@ public class all extends watch{
             sumprice = FPcasio2 * amount;
                 System.out.println("Female "+casio2+" amount : "+amount+" Price : "+sumprice);
             }
-        else if(Momega == 1){           
+//          }
+//          
+//          else if(B==2){
+        if(Momega == 1){           
             sumprice = MPomega1 * amount;
                 System.out.println("Male "+omega1+" amount : "+amount+" Price : "+sumprice);               
             }       
@@ -33,8 +38,11 @@ public class all extends watch{
         else if(Fomega == 2){              
             sumprice = FPomega2 * amount;
                 System.out.println("Female "+omega2+" amount : "+amount+" Price : "+sumprice);              
-            } 
-        else if(Mrolex == 1){           
+            }
+//           }
+//          
+//          else if(B==3){
+         if(Mrolex == 1){           
             sumprice = MProlex1 * amount;
                 System.out.println("Male "+rolex1+" amount : "+amount+" Price : "+sumprice);               
             }       
@@ -50,7 +58,9 @@ public class all extends watch{
             sumprice = FProlex2 * amount;
                 System.out.println("Female "+rolex2+" amount : "+amount+" Price : "+sumprice);              
             }
-        else if(Mswatch == 1){           
+//          }
+//          else if(B==4){
+        if(Mswatch == 1){           
             sumprice = MPswatch1 * amount;
                 System.out.println("Male "+swatch1+" amount : "+amount+" Price : "+sumprice);               
             }       
@@ -66,7 +76,10 @@ public class all extends watch{
             sumprice = FPswatch2 * amount;
                 System.out.println("Female "+swatch2+" amount : "+amount+" Price : "+sumprice);              
             }
-        else if(Mrado == 1){           
+//          }
+          
+//          else if(B==5){
+        if(Mrado == 1){           
             sumprice = MPrado1 * amount;
                 System.out.println("Male "+rado1+" amount : "+amount+" Price : "+sumprice);               
             }       
@@ -81,8 +94,10 @@ public class all extends watch{
         else if(Frado == 2){              
             sumprice = FPrado2 * amount;
                 System.out.println("Female "+rado2+" amount : "+amount+" Price : "+sumprice);              
-            } 
-        }
+            }
+          }
+//        }  
+//    }
     
     public  void show(){}
 

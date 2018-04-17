@@ -46,7 +46,30 @@ public class omega extends watch implements gender,qualities {
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();
             System.out.println("");
-            Msum();          
+            if(Momega == 1){
+                    if(Momegainven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            } 
+            }
+            if(Momega == 2){
+                    if(Momegainven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Msum();    
+            }
+            }          
     }
     
    public void FemaleQualities(){
@@ -62,7 +85,30 @@ public class omega extends watch implements gender,qualities {
             System.out.print("How many do you want ? >>>>>>>>> ");
             amount = model.nextInt();  
             System.out.println("");
-            Fsum();                             
+            if(Fomega == 1){
+                    if(Fomegainven1 < amount ){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            } 
+            }
+            if(Fomega == 2){
+                    if(Fomegainven2 < amount){
+                        System.out.println("****************************");
+                        System.out.println("     Amount not enough");
+                        System.out.println("****************************");
+                        System.out.println("");
+                        print();
+            }
+                    else{
+                    Fsum();    
+            }
+            }                                             
     }
    
    public void Msum(){          
@@ -78,7 +124,8 @@ public class omega extends watch implements gender,qualities {
                 Momegainven2 = Momegainven2-amount;
             }             
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println(""); 
+            B=2;
         }
    
    public void Fsum(){
@@ -94,6 +141,7 @@ public class omega extends watch implements gender,qualities {
                 Fomegainven2 = Fomegainven2-amount;
             } 
             System.out.println("===========================================================================");
-            System.out.println("");                   
+            System.out.println(""); 
+            B=2;
    }
 }
