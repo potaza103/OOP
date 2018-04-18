@@ -46,7 +46,7 @@ public class loginemployee  {
     
         item item = new item();
         System.out.println("");
-        item.print();
+        item.show();
         login login = new login();
         login.loginstore();
     }

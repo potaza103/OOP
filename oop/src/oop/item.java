@@ -4,7 +4,7 @@ import java.util.Scanner;
 public  class item extends inventory {
     
  
-    public void print() {
+    public void show() {
         System.out.println("    ===========***************************===========");
         System.out.println("    =================Inventory Status================");
         System.out.println("    ===========***************************===========");     
@@ -176,10 +176,10 @@ public  class item extends inventory {
         String D = input.nextLine();
         while("Y".equals(D)||"y".equals(D)){
            System.out.println("");
-           this.print();            
+           show();            
         }                 
-    }
-    public  void show(){
+    
+    
            System.out.println("");
            System.out.println("======================= THANK YOU =========================");
            System.out.println("   =====================================================");

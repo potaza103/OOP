@@ -9,7 +9,8 @@ public class menu extends watch {
     swatch swatch = new swatch();
     Scanner a = new Scanner(System.in);
      
-    public void print() {       
+    public void print() {     
+        int numbermodel;
         do{          
             System.out.println("========================================================");
             System.out.println("\t\t Welcome To Watch Store");
@@ -35,7 +36,8 @@ public class menu extends watch {
         }else if (numbermodel==5){          
             rado.show();
         }
-           
+         
+        int want;
         do{       
             System.out.println("Do you want Watch Store Enter 1");
             System.out.println("Do you want Check bill  Enter 2");

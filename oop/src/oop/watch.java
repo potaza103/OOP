@@ -15,9 +15,9 @@ public abstract class watch extends inventory {
     static double allsum;
     static double sumprice;   
     static int amount;
-    int numbermodel;
+//    int numbermodel;
     static int sex;
-    static int want;
+//    static int want;
     static int A,B,C;
     static int count=1;
     static String E;
