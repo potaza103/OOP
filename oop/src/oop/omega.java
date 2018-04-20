@@ -44,10 +44,10 @@ public class omega extends watch implements gender,qualities {
             System.out.println("");
           }while(Momega != 1 && Momega != 2);  
             System.out.print("How many do you want ? >>>>>>>>> ");
-            amount = model.nextInt();
+            Omegaamount = model.nextInt();
             System.out.println("");
             if(Momega == 1){
-                    if(Momegainven1 < amount ){
+                    if(Momegainven1 < Omegaamount ){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -59,7 +59,7 @@ public class omega extends watch implements gender,qualities {
             } 
             }
             if(Momega == 2){
-                    if(Momegainven2 < amount){
+                    if(Momegainven2 < Omegaamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -83,10 +83,10 @@ public class omega extends watch implements gender,qualities {
             System.out.println("");
         }while(Fomega != 1 && Fomega != 2);
             System.out.print("How many do you want ? >>>>>>>>> ");
-            amount = model.nextInt();  
+            Omegaamount = model.nextInt();  
             System.out.println("");
             if(Fomega == 1){
-                    if(Fomegainven1 < amount ){
+                    if(Fomegainven1 < Omegaamount ){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -98,7 +98,7 @@ public class omega extends watch implements gender,qualities {
             } 
             }
             if(Fomega == 2){
-                    if(Fomegainven2 < amount){
+                    if(Fomegainven2 < Omegaamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -114,34 +114,32 @@ public class omega extends watch implements gender,qualities {
    public void Msum(){          
             System.out.println("=============================== Show Detail ===============================");                      
             if(Momega == 1){           
-            sumprice = MPomega1 * amount;
-                System.out.println("Male "+omega1+" amount : "+amount+" Price : "+sumprice);
-                Momegainven1 = Momegainven1-amount;
+            sumprice = MPomega1 * Omegaamount;
+                System.out.println("Male "+omega1+" amount : "+Omegaamount+" Price : "+sumprice);
+                Momegainven1 = Momegainven1-Omegaamount;
             }       
             else{           
-            sumprice = MPomega2 * amount;
-                System.out.println("Male "+omega2+" amount : "+amount+" Price : "+sumprice);
-                Momegainven2 = Momegainven2-amount;
+            sumprice = MPomega2 * Omegaamount;
+                System.out.println("Male "+omega2+" amount : "+Omegaamount+" Price : "+sumprice);
+                Momegainven2 = Momegainven2-Omegaamount;
             }             
             System.out.println("===========================================================================");
             System.out.println(""); 
-            B=2;
         }
    
    public void Fsum(){
             System.out.println("=============================== Show Detail ==============================="); 
             if(Fomega == 1) {
-            sumprice = FPomega1* amount;
-                System.out.println("Female "+omega1+" amount : "+amount+" Price : "+sumprice);
-                Fomegainven1 = Fomegainven1-amount;
+            sumprice = FPomega1* Omegaamount;
+                System.out.println("Female "+omega1+" amount : "+Omegaamount+" Price : "+sumprice);
+                Fomegainven1 = Fomegainven1-Omegaamount;
             } 
             else{              
-            sumprice = FPomega2 * amount;
-                System.out.println("Female "+omega2+" amount : "+amount+" Price : "+sumprice); 
-                Fomegainven2 = Fomegainven2-amount;
+            sumprice = FPomega2 * Omegaamount;
+                System.out.println("Female "+omega2+" amount : "+Omegaamount+" Price : "+sumprice); 
+                Fomegainven2 = Fomegainven2-Omegaamount;
             } 
             System.out.println("===========================================================================");
             System.out.println(""); 
-            B=2;
    }
 }

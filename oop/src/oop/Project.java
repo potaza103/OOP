@@ -16,11 +16,8 @@ public class Project {
 //            System.out.println(""); 
             login login = new login();
             login.loginstore();
-        }
-//          menu menu = new menu();
-//          menu.print();
-         
-        
-    
+//                menu menu = new menu();
+//                menu.print();
+        }        
     }
-//}
+

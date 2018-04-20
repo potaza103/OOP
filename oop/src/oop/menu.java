@@ -49,7 +49,8 @@ public class menu extends watch {
             if(want == 1){                 
 //                count++;
                 allsum =allsum+sumprice;          
-                print();         
+                print(); 
+                count++;
             }
             else {  
                 allsum = allsum+sumprice;
@@ -58,15 +59,17 @@ public class menu extends watch {
                 all.print();
                 System.out.println("\t...........Summary Price : "+allsum+"...........");
                 System.out.println("=================================================================");
-                do{
-                Scanner put = new Scanner(System.in);
-                System.out.println("Do you want to exit ? (Y/N)");               
-                E = put.nextLine();               
-                }while("Y".equals(E)||"y".equals(E));
+//                do{
+//                Scanner put = new Scanner(System.in);
+//                System.out.println("Do you want to exit ? (Y/N)");               
+//                E = put.nextLine();               
+//                }while("N".equals(E)||"n".equals(E));
                 super.thank();
             }
     }
-    public  void show(){}
+    public  void show(){
+        
+    }
   
 }
     

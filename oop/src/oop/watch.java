@@ -14,16 +14,16 @@ public abstract class watch extends inventory {
     static int Frado;
     static double allsum;
     static double sumprice;   
-    static int amount;
+    static int Casioamount,Omegaamount,Rolexamount,Swatchamount,Radoamount;
 //    int numbermodel;
     static int sex;
-//    static int want;
-    static int A,B,C;
     static int count=1;
-    static String E;
+//    static int want;
+    
     public void thank(){      
         System.out.println("   ======================= THANK YOU  ========================");      
     }
+    
     public abstract void print();
 }
 

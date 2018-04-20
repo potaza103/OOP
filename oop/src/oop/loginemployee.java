@@ -1,6 +1,7 @@
 package oop;
 import java.util.Scanner;
-public class loginemployee  {    
+public class loginemployee  { 
+    int count;
     static String UsernameLog ;
     static String PasswordLog ;
     private String UsernameEmp ;
@@ -20,28 +21,31 @@ public class loginemployee  {
         System.out.println("    ===========***************************===========");
         System.out.println("    ====================EMPLOYEE=====================");
         System.out.println("    ===========***************************===========");
-        
-        do{
+               
+        do{           
+            for(int i=0;i<count;i++){
             Scanner LoginEmployee = new Scanner(System.in);
-            System.out.println("Please Login");
+            System.out.println("Please Login");            
             System.out.print("Username >>>>> ");
             UsernameLog = LoginEmployee.nextLine();
             System.out.print("Password >>>>> ");
             PasswordLog = LoginEmployee.nextLine();
-            if((UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))){
-                System.out.println("You not Employee");
-                System.out.println("Prease login for assure");
-                for(int i = 0 ; i >= 2 ; i ++){
-                    do{
-                        System.out.println("Please Login");
-                        System.out.print("Username >>>>> ");
-                        UsernameLog = LoginEmployee.nextLine();
-                        System.out.print("Password >>>>> ");
-                        PasswordLog = LoginEmployee.nextLine(); 
-                    }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));
-                } 
-            }
             
+//            if((UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))){
+//                System.out.println("You not Employee");
+//                System.out.println("Prease login for assure");
+//                for(int i = 0 ; i >= 2 ; i ++){
+//                    do{
+//                        System.out.println("Please Login");
+//                        System.out.print("Username >>>>> ");
+//                        UsernameLog = LoginEmployee.nextLine();
+//                        System.out.print("Password >>>>> ");
+//                        PasswordLog = LoginEmployee.nextLine(); 
+//                    }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));
+//                } 
+//            }
+            count++;
+            }
         }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))); 
     
         item item = new item();

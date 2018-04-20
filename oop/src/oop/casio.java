@@ -47,10 +47,10 @@ public class casio extends watch implements gender,qualities {
             System.out.println("");          
         }while(Mcasio != 1 && Mcasio != 2);        
             System.out.print("How many do you want ? >>>>>>>>> ");
-            amount = model.nextInt();          
+            Casioamount = model.nextInt();          
             System.out.println("");
             if(Mcasio == 1){
-                    if(Mcasioinven1 < amount ){
+                    if(Mcasioinven1 < Casioamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -62,7 +62,7 @@ public class casio extends watch implements gender,qualities {
             } 
             }
             if(Mcasio == 2){
-                    if(Mcasioinven2 < amount){
+                    if(Mcasioinven2 < Casioamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -86,10 +86,10 @@ public class casio extends watch implements gender,qualities {
             System.out.println("");                      
         }while(Fcasio != 1 && Fcasio != 2);
             System.out.print("How many do you want ? >>>>>>>>> ");
-            amount = model.nextInt();  
+            Casioamount = model.nextInt();  
             System.out.println("");
             if(Fcasio == 1){
-                    if(Fcasioinven1 < amount ){
+                    if(Fcasioinven1 < Casioamount ){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -101,7 +101,7 @@ public class casio extends watch implements gender,qualities {
             } 
             }
             if(Fcasio == 2){
-                    if(Fcasioinven2 < amount){
+                    if(Fcasioinven2 < Casioamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
@@ -117,34 +117,32 @@ public class casio extends watch implements gender,qualities {
     public void Msum(){          
             System.out.println("=============================== Show Detail ===============================");                      
             if(Mcasio == 1){            
-            sumprice = MPcasio1 * amount;           
-                System.out.println("Male "+casio1+" amount : "+amount+" Price : "+sumprice);                
-                Mcasioinven1 = Mcasioinven1 - amount;
+            sumprice = MPcasio1 * Casioamount;           
+                System.out.println("Male "+casio1+" amount : "+Casioamount+" Price : "+sumprice);                
+                Mcasioinven1 = Mcasioinven1 - Casioamount;
             }
             else{            
-            sumprice = MPcasio2 * amount;
-                System.out.println("Male "+casio2+" amount : "+amount+" Price : "+sumprice);
-                Mcasioinven2 = Mcasioinven2 - amount;
+            sumprice = MPcasio2 * Casioamount;
+                System.out.println("Male "+casio2+" amount : "+Casioamount+" Price : "+sumprice);
+                Mcasioinven2 = Mcasioinven2 - Casioamount;
             }              
             System.out.println("===========================================================================");
             System.out.println("");
-            B=1;
         }
     
     public void Fsum(){
             System.out.println("=============================== Show Detail ===============================");  
             if(Fcasio == 1) {           
-            sumprice = FPcasio1 * amount;
-                System.out.println("Female "+casio1+" amount : "+amount+" Price : "+sumprice);  
-                Fcasioinven1 = Fcasioinven1 - amount;
+            sumprice = FPcasio1 * Casioamount;
+                System.out.println("Female "+casio1+" amount : "+Casioamount+" Price : "+sumprice);  
+                Fcasioinven1 = Fcasioinven1 - Casioamount;
             } 
             else{              
-            sumprice = FPcasio2 * amount;
-                System.out.println("Female "+casio2+" amount : "+amount+" Price : "+sumprice);
-                Fcasioinven2 = Fcasioinven2 - amount;
+            sumprice = FPcasio2 * Casioamount;
+                System.out.println("Female "+casio2+" amount : "+Casioamount+" Price : "+sumprice);
+                Fcasioinven2 = Fcasioinven2 - Casioamount;
             }
             System.out.println("===========================================================================");
-            System.out.println(""); 
-            B=1;      
+            System.out.println("");      
     }
 }
