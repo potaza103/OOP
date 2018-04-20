@@ -36,9 +36,9 @@ public class loginemployee  {
             }
             else if(count==0){
             System.out.println();
-            System.out.println("===================================================");
-            System.out.println(" You locked more than 3 times the system shut down");
-            System.out.println("  ===============================================");
+            System.out.println("====================================================");
+            System.out.println("  You locked more than 3 times the system shutdown");
+            System.out.println("    ===========================================");
                  System.exit(0);              
             }
           }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));              
