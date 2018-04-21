@@ -30,10 +30,8 @@ public class menu extends watch {
         this.Mradoinven1 = Mradoinven1 ;
         this.Fradoinven1= Fradoinven1;
         this.Mradoinven2 = Mradoinven2;
-        this.Fradoinven2= Fradoinven2 ;
-        show();
-        print();
-    }
+        this.Fradoinven2= Fradoinven2 ;    
+    }   
       public void show(){
         do{   
             System.out.println("========================================================");
@@ -59,6 +57,7 @@ public class menu extends watch {
         }else if (numbermodel==5){          
             rado.show();
         }
+        print();
     }
       
     public void print() {  
@@ -72,10 +71,8 @@ public class menu extends watch {
             System.out.println("");           
         }while(want !=1 && want !=2);
             if(want == 1){                 
-//              count++;
-                allsum =allsum+sumprice;          
+                allsum = allsum+sumprice;          
                 show(); 
-                count++;
             }else {  
                 allsum = allsum+sumprice;
                 System.out.println("============================ Bill ===============================");

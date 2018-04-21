@@ -18,8 +18,7 @@ public class Project {
             
             watchlog watchlog = new watchlog();
             watchlog.loginstore();
-//                menu menu = new menu();
-//                menu.print();
+
         }        
     }
 }    
