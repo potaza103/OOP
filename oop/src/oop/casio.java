@@ -1,7 +1,6 @@
 package oop;
 import java.util.Scanner;
-public class casio extends watch implements gender,qualities {    
-//public class casio extends inventory implements gender,qualities {    
+public class casio extends watch implements gender,qualities {       
     
     public void show(){
        System.out.println("========================================================");
@@ -23,10 +22,6 @@ public class casio extends watch implements gender,qualities {
         gender();             
     }
     
-    public void goods(){
-        
-    }
- 
     public void gender(){     
         if(sex == 1){
             MaleQualities();
@@ -56,10 +51,10 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
+                    }
                     else{
-                    Msum();    
-            } 
+                        Msum();    
+                    } 
             }
             if(Mcasio == 2){
                     if(Mcasioinven2 < Casioamount){

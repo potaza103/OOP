@@ -1,54 +1,118 @@
 package oop;
+import java.util.ArrayList;
 import java.util.Scanner;
-public class login extends loginemployee {
+import static oop.login.UsernameCus;
+public class login { 
+    
+    //loginemployee
+    int c;
+    int count;
+    static String UsernameLog ;
+    static String PasswordLog ;
+    private String UsernameEmp ;
+    private String PasswordEmp ;
+    //logincustomer 
+    static String UsernameCus ;
+    static String PasswordCus ;
+    static String UsernameCusStr ;
+    static String PasswordCusStr ;
+    static String UsernameLogCus ;
+    static String PasswordLogCus ;       
+    private String UsernameLogCus1 = "Aom" ;
+    private String PasswordLogCus1 = "1234" ;
+    private String UsernameLogCus2 = "Pota" ;
+    private String PasswordLogCus2 = "1234" ;
     static int member;
-    static int select;
     
     login(){
-        super();
-        System.out.println("====================WELLCOME TO WATCH STORE===============");
-        System.out.println("================The service is available online===========");
+        for(int i = 1 ; i <=20 ; i++)
+        System.out.print("=");   
+        System.out.print(""); 
     }
     
-    public void loginstore(){
-        loginemployee loginemployee = new loginemployee("admin","1234");      
-        do{
-            System.out.println("Please select your identity");
-            System.out.println("Press 1 : Customer   ");
-            System.out.println("Press 2 : Employee  ");
-            System.out.print("Press Enter Number  >>>>> ");
-            Scanner are_member = new Scanner(System.in);
-            select = are_member.nextInt();
-        }while (select != 1 && select != 2);
-            System.out.println("");
-        
-            if(select == 1){
-                logincustomer logincustomer = new logincustomer();
-                do{
-                    System.out.println("Are you a member");
-                    System.out.println("Press 1 to login   ");
-                    System.out.println("Press 2 to singin  ");
-                    System.out.print("Press Enter Number  >>>>> ");
-                    Scanner are_member = new Scanner(System.in);
-                    member = are_member.nextInt();
-                }while (member != 1 && member != 2);
-                System.out.println("");
-        
-                    if(member ==1){
-                        logincustomer.loginFixCus();
-                        menu menu = new menu(); 
-                        menu.print();                
-                    }else if(member ==2) {
-                        logincustomer.singinCus();
-                        System.out.println("********Again, to confirm yourself.*********");
-                        logincustomer.loginCus();
-                        menu menu = new menu(); 
-                        menu.print();  
-                    }
-                System.out.println("******************************************************************"); 
-        
-            }else if(select == 2){ 
-                loginemployee.loginemp();
-            }
+    login(String UsernameEmp,String PasswordEmp){
+        this();
+        this.UsernameEmp = UsernameEmp;
+        this.PasswordEmp = PasswordEmp;
     }
+    
+    public void loginemp(){
+        System.out.println("    ===========***************************===========");
+        System.out.println("    ====================EMPLOYEE=====================");
+        System.out.println("    ===========***************************===========");
+         do{
+            Scanner LoginEmployee = new Scanner(System.in);
+            System.out.println("Please Login");            
+            System.out.print("Username >>>>> ");
+            UsernameLog = LoginEmployee.nextLine();
+            System.out.print("Password >>>>> ");
+            PasswordLog = LoginEmployee.nextLine();
+            
+            if(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))&&count!=0){
+                System.out.println();
+                System.out.println("Password is incorrect, system will shutdown if it is wrong "+count+" times.");           
+                count--;
+            }
+            else if(count==0){
+                System.out.println();
+                System.out.println("====================================================");
+                System.out.println("  You locked more than 3 times the system shutdown");
+                System.out.println("    ===========================================");
+                System.exit(0);              
+            }
+          }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));      
+        
+       // login login = new login();
+        //login.loginstore();
+    }
+
+    
+    public void logincustomer(){
+        System.out.println("    ===========***************************===========");
+        System.out.println("    ====================CUSTOMER=====================");
+        System.out.println("    ===========***************************===========");
+    }
+    
+    public void signupCus(){
+        Scanner LoginCustomer = new Scanner(System.in);
+        ArrayList log  = new  ArrayList();
+        do {
+            System.out.println("Please Signup");
+            System.out.print("Username >>>>> ");
+            UsernameCus = LoginCustomer.nextLine();
+            log.add(UsernameCus);
+            System.out.print("Password >>>>> ");
+            PasswordCus = LoginCustomer.nextLine();
+            log.add(PasswordCus);
+            UsernameCusStr = (String)log.get(0); 
+            PasswordCusStr = (String)log.get(1);
+        } while (!(UsernameCus.equals(UsernameCusStr) && PasswordCus.equals(PasswordCusStr)));
+    }
+    
+    public void loginCus(){
+        Scanner LoginEmployee = new Scanner(System.in); 
+        do{          
+            System.out.println("Please signin");
+            System.out.print("Username >>>>> ");
+            UsernameCus = LoginEmployee.nextLine();
+            System.out.print("Password >>>>> ");
+            PasswordCus= LoginEmployee.nextLine();           
+        } while (!(UsernameCus.equals(UsernameCusStr) && PasswordCus.equals(PasswordCusStr)));
+       
+        
+    }
+       
+    public void loginFixCus(){
+        Scanner LoginFixCustomer = new Scanner(System.in);                
+        do{            
+            System.out.println("Please Login");
+            System.out.print("Username >>>>> ");
+            UsernameLogCus = LoginFixCustomer.nextLine();
+            System.out.print("Password >>>>> ");
+            PasswordLogCus = LoginFixCustomer.nextLine();           
+        }while (!(UsernameLogCus1.equals(UsernameLogCus) && PasswordLogCus1.equals(PasswordLogCus))
+             && !(UsernameLogCus2.equals(UsernameLogCus) && PasswordLogCus2.equals(PasswordLogCus)));  
+    }
+
+   
 }

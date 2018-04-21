@@ -1,46 +1,34 @@
 
 package oop;
 import java.util.Scanner;
-public  class item extends inventory {
-    
- 
-    public void show() {
-        System.out.println("    ===========***************************===========");
-        System.out.println("    =================Inventory Status================");
-        System.out.println("    ===========***************************===========");     
-        System.out.println("");
-        System.out.println("Press 1 : Casio ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+casio1+" //Male: "+Mcasioinven1+" //Female: "+Fcasioinven1);
-        System.out.println(""+casio2+" //Male: "+Mcasioinven2+" //Female: "+Fcasioinven2); 
-        System.out.println("    =================================================");
-        System.out.println("");
-        System.out.println("Press 2 : Omega ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+omega1+" //Male: "+Momegainven1+" //Female: "+Fomegainven1);
-        System.out.println(""+omega2+" //Male: "+Momegainven2+" //Female: "+Fomegainven2);
-        System.out.println("    =================================================");
-        System.out.println("");
-        System.out.println("Press 3 : Rolex ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+rolex1+" //Male: "+Mrolexinven1+" //Female: "+Frolexinven1);
-        System.out.println(""+rolex2+" //Male: "+Mrolexinven2+" //Female: "+Frolexinven2);
-        System.out.println("    =================================================");
-        System.out.println("");
-        System.out.println("Press 4 : Swatch ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+swatch1+" //Male: "+Mswatchinven1+" //Female: "+Fswatchinven1);
-        System.out.println(""+swatch2+" //Male: "+Mswatchinven2+" //Female: "+Fswatchinven2);
-        System.out.println("    =================================================");
-        System.out.println("");
-        System.out.println("Press 5 : Rado ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+rado1+" //Male: "+Mradoinven1+" //Female: "+Fradoinven1);
-        System.out.println(""+rado2+" //Male: "+Mradoinven2+" //Female: "+Fradoinven2);
-        System.out.println("    ================================================="); 
-        System.out.print("\n Please select Product you want to add : ");       
-        Scanner inven = new Scanner(System.in);
-        int product = inven.nextInt();
+public  class item extends watch {
+    int product ;
+    Scanner inven = new Scanner(System.in);
+    item (int Mcasioinven1,int Fcasioinven1 ,int Mcasioinven2   ,int Fcasioinven2  ,int Momegainven1,int Fomegainven1 ,int Momegainven2 ,int Fomegainven2  ,int Mrolexinven1 ,int Frolexinven1  ,int Mrolexinven2 ,int Frolexinven2 ,int Mswatchinven1  ,int Fswatchinven1  ,int Mswatchinven2  ,int Fswatchinven2  ,int Mradoinven1 ,int Fradoinven1,int Mradoinven2 ,int Fradoinven2 ){
+        this.Mcasioinven1 = Mcasioinven1;
+        this.Fcasioinven1 = Fcasioinven1 ;
+        this.Mcasioinven2 =  Mcasioinven2;
+        this.Fcasioinven2 = Fcasioinven2;
+        this.Momegainven1 = Momegainven1;
+        this.Fomegainven1 = Fomegainven1;
+        this.Momegainven2 = Momegainven2;
+        this.Fomegainven2 = Fomegainven2;
+        this.Mrolexinven1 = Mrolexinven1;
+        this.Frolexinven1 = Frolexinven1;
+        this.Mrolexinven2 = Mrolexinven2;
+        this.Frolexinven2 = Frolexinven2;
+        this.Mswatchinven1 = Mswatchinven1;
+        this.Fswatchinven1 = Fswatchinven1;
+        this.Mswatchinven2 = Mswatchinven2;
+        this.Fswatchinven2 = Fswatchinven2;
+        this.Mradoinven1 = Mradoinven1 ;
+        this.Fradoinven1= Fradoinven1;
+        this.Mradoinven2 = Mradoinven2;
+        this.Fradoinven2= Fradoinven2 ;
+        print();
+    }
+    public void print() {
+        show();
         
         do{
             if(product == 1){
@@ -184,4 +172,123 @@ public  class item extends inventory {
            System.out.println("   =====================================================");
            System.out.println("");
     }
+
+    public void show() {
+        System.out.println("    ===========***************************===========");
+        System.out.println("    =================Inventory Status================");
+        System.out.println("    ===========***************************===========");     
+        System.out.println("");
+        System.out.println("Press 1 : Casio ");
+        System.out.println("======================== Status ========================");
+        System.out.println(""+casio1+" //Male: "+Mcasioinven1+" //Female: "+Fcasioinven1);
+        System.out.println(""+casio2+" //Male: "+Mcasioinven2+" //Female: "+Fcasioinven2); 
+        System.out.println("    =================================================");
+        System.out.println("");
+        System.out.println("Press 2 : Omega ");
+        System.out.println("======================== Status ========================");
+        System.out.println(""+omega1+" //Male: "+Momegainven1+" //Female: "+Fomegainven1);
+        System.out.println(""+omega2+" //Male: "+Momegainven2+" //Female: "+Fomegainven2);
+        System.out.println("    =================================================");
+        System.out.println("");
+        System.out.println("Press 3 : Rolex ");
+        System.out.println("======================== Status ========================");
+        System.out.println(""+rolex1+" //Male: "+Mrolexinven1+" //Female: "+Frolexinven1);
+        System.out.println(""+rolex2+" //Male: "+Mrolexinven2+" //Female: "+Frolexinven2);
+        System.out.println("    =================================================");
+        System.out.println("");
+        System.out.println("Press 4 : Swatch ");
+        System.out.println("======================== Status ========================");
+        System.out.println(""+swatch1+" //Male: "+Mswatchinven1+" //Female: "+Fswatchinven1);
+        System.out.println(""+swatch2+" //Male: "+Mswatchinven2+" //Female: "+Fswatchinven2);
+        System.out.println("    =================================================");
+        System.out.println("");
+        System.out.println("Press 5 : Rado ");
+        System.out.println("======================== Status ========================");
+        System.out.println(""+rado1+" //Male: "+Mradoinven1+" //Female: "+Fradoinven1);
+        System.out.println(""+rado2+" //Male: "+Mradoinven2+" //Female: "+Fradoinven2);
+        System.out.println("    ================================================="); 
+        System.out.print("\n Please select Product you want to add : ");  
+        product = inven.nextInt();
+        
+    }
+      public int getFcasioinven1() {
+        return Fcasioinven1;
+    }
+
+    public int getFcasioinven2() {
+        return Fcasioinven2;
+    }
+
+    public int getFomegainven1() {
+        return Fomegainven1;
+    }
+
+    public int getFomegainven2() {
+        return Fomegainven2;
+    }
+
+    public int getFrolexinven1() {
+        return Frolexinven1;
+    }
+
+    public int getFrolexinven2() {
+        return Frolexinven2;
+    }
+
+    public int getFswatchinven1() {
+        return Fswatchinven1;
+    }
+
+    public int getFswatchinven2() {
+        return Fswatchinven2;
+    }
+
+    public int getFradoinven1() {
+        return Fradoinven1;
+    }
+
+    public int getFradoinven2() {
+        return Fradoinven2;
+    }
+
+    public int getMcasioinven1() {
+        return Mcasioinven1;
+    }
+
+    public int getMcasioinven2() {
+        return Mcasioinven2;
+    }
+
+    public int getMomegainven1() {
+        return Momegainven1;
+    }
+
+    public int getMomegainven2() {
+        return Momegainven2;
+    }
+
+    public int getMrolexinven1() {
+        return Mrolexinven1;
+    }
+
+    public int getMrolexinven2() {
+        return Mrolexinven2;
+    }
+
+    public int getMswatchinven1() {
+        return Mswatchinven1;
+    }
+
+    public int getMswatchinven2() {
+        return Mswatchinven2;
+    }
+
+    public int getMradoinven1() {
+        return Mradoinven1;
+    }
+
+    public int getMradoinven2() {
+        return Mradoinven2;
+    }
+    
 }
