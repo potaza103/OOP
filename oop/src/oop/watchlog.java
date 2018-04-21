@@ -33,13 +33,14 @@ public class watchlog extends login {
     
     watchlog(){
         super();
-        System.out.println();
-        System.out.println("  ================== WELLCOME TO WATCH STORE =============");
-        System.out.println("    ============ The service is available online =======");
     }
     
     public void loginstore(){
-        login = new login("admin","1234");      
+        System.out.println();
+        login = new login("admin","1234"); 
+        System.out.println();
+        System.out.println("  ================== WELLCOME TO WATCH STORE ==================");
+        System.out.println("    ============ The service is available online ============");
         do{
             System.out.println(); 
             System.out.println("Please select your identity");
@@ -107,7 +108,8 @@ public class watchlog extends login {
                         System.out.println("******************************************************************"); 
         
             }else if(select == 2) { 
-                login.loginemp();               
+               
+                login.loginemp();           
                 item item = new item( Mcasioinven1, Fcasioinven1, Mcasioinven2, Fcasioinven2 ,Momegainven1 ,Fomegainven1 , Momegainven2  , Fomegainven2 , Mrolexinven1, Frolexinven1 , Mrolexinven2 , Frolexinven2, Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1 ,Fradoinven1, Mradoinven2 , Fradoinven2 );
                 item.show();
                                          

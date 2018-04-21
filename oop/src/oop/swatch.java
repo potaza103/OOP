@@ -18,7 +18,7 @@ public class swatch extends watch  implements gender,qualities{
         System.out.print("Enter Number : >>>>>>>>>> ");
         Scanner gender = new Scanner(System.in);
         sex = gender.nextInt();
-        System.out.println("");
+        System.out.println();
         }while(sex !=1 && sex !=2);
         gender();
     }
@@ -42,13 +42,15 @@ public class swatch extends watch  implements gender,qualities{
             System.out.println("Enter Number : 2 for "+swatch2+" Price: "+MPswatch2+" >>Inventory " + Mswatchinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mswatch = model.nextInt(); 
-            System.out.println("");
+            
+            System.out.println();
           }while(Mswatch != 1 && Mswatch != 2);
          int i;
          do{
              i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Swatchamount = model.nextInt();
+            
             System.out.println("");
             if(Mswatch == 1){
                     if(Mswatchinven1 < Swatchamount ){
@@ -78,15 +80,15 @@ public class swatch extends watch  implements gender,qualities{
             System.out.println("Enter Number : 1 for "+swatch1+" Price : "+FPswatch1+" >>Inventory : " + Fswatchinven1 );
             System.out.println("Enter Number : 2 for "+swatch2+" Price : "+FPswatch2+" >>Inventory : " + Fswatchinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
-            Fswatch = model.nextInt(); 
-            System.out.println("");
+            Fswatch = model.nextInt();
+            System.out.println();
         }while(Fswatch != 1 && Fswatch != 2);
         int i;
         do{
             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Swatchamount = model.nextInt();  
-            System.out.println("");
+            System.out.println();
             if(Fswatch == 1){
                     if(Fswatchinven1 < Swatchamount ){
                         System.out.println("****************************");

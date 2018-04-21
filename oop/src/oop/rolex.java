@@ -23,7 +23,7 @@ public class rolex extends watch implements gender,qualities{
         gender();
     }
      
- public void gender(){     
+    public void gender(){     
         if(sex == 1){
             MaleQualities();
             Msum(); 
@@ -42,14 +42,16 @@ public class rolex extends watch implements gender,qualities{
             System.out.println("Enter Number : 2 for "+rolex2+" Price: "+MProlex2+" >>Inventory " +Mrolexinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mrolex = model.nextInt(); 
-            System.out.println("");
+            
+            System.out.println();
           }while(Mrolex != 1 && Mrolex != 2);
          int i;
          do{
              i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Rolexamount = model.nextInt();
-            System.out.println("");
+            
+            System.out.println();
             if(Mrolex == 1){
                     if(Mrolexinven1 < Rolexamount ){
                         System.out.println("****************************");
@@ -78,15 +80,17 @@ public class rolex extends watch implements gender,qualities{
             System.out.println("Enter Number : 1 for "+rolex1+" Price : "+FProlex1+" >>Inventory : " +Frolexinven1 );
             System.out.println("Enter Number : 2 for "+rolex2+" Price : "+FProlex2+" >>Inventory : " +Frolexinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
-            Frolex = model.nextInt(); 
-            System.out.println("");
+            Frolex = model.nextInt();
+            
+            System.out.println();
         }while(Frolex != 1 && Frolex != 2);
         int i;
         do{
             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
-            Rolexamount = model.nextInt();  
-            System.out.println("");
+            Rolexamount = model.nextInt();
+            System.out.println();
+            
             if(Frolex == 1){
                     if(Frolexinven1 < Rolexamount ){
                         System.out.println("****************************");
@@ -114,12 +118,12 @@ public class rolex extends watch implements gender,qualities{
             if(Mrolex == 1){           
             sumprice = MProlex1 * Rolexamount;
                 System.out.println("Male "+rolex1+" amount : "+Rolexamount+" Price : "+sumprice);
-                Mradoinven1 = Mradoinven1-Rolexamount;
+                Mrolexinven1 = Mrolexinven1-Rolexamount;
             }       
             else{           
             sumprice = MProlex2 * Rolexamount;
                 System.out.println("Male "+rolex2+" amount : "+Rolexamount+" Price : "+sumprice);
-                Mradoinven2 = Mradoinven2-Rolexamount;
+                Mrolexinven2 = Mrolexinven2-Rolexamount;
             }             
             System.out.println("===========================================================================");
             System.out.println();  
@@ -129,12 +133,12 @@ public class rolex extends watch implements gender,qualities{
             if(Frolex == 1) {
             sumprice = FProlex1* Rolexamount;
                 System.out.println("Female "+rolex1+" amount : "+Rolexamount+" Price : "+sumprice);
-                Fradoinven1 = Fradoinven1-Rolexamount;
+                Frolexinven1 = Frolexinven1-Rolexamount;
             } 
             else{              
             sumprice = FProlex2 * Rolexamount;
                 System.out.println("Female "+rolex2+" amount : "+Rolexamount+" Price : "+sumprice);
-                Fradoinven2 = Fradoinven2-Rolexamount;
+                Frolexinven2 = Frolexinven2-Rolexamount;
             } 
             System.out.println("===========================================================================");
             System.out.println();    

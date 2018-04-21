@@ -1,7 +1,8 @@
 package oop;
 import java.util.Scanner;
+import java.util.ArrayList;
 public abstract class watch extends inventory {  
-        
+    String name1;
     static int Mcasio;   
     static int Fcasio;
     static int Momega;
@@ -13,8 +14,8 @@ public abstract class watch extends inventory {
     static int Mrado;
     static int Frado;
     static double allsum;
-    static double sumprice;   
-    static int Casioamount,Omegaamount,Rolexamount,Swatchamount,Radoamount;
+    static double sumprice; 
+    static int Casioamount,Omegaamount,Rolexamount,Swatchamount,Radoamount;   
     static int sex;
     static int count=1;
     

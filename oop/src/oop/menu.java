@@ -1,6 +1,8 @@
 package oop;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class menu extends watch {
+    ArrayList array = new ArrayList();
     static int numbermodel ;
     casio casio = new casio();
     rado rado = new rado();
@@ -9,7 +11,8 @@ public class menu extends watch {
     swatch swatch = new swatch();
     Scanner a = new Scanner(System.in);
     String E;
-
+     int name;
+     int amount;
     menu (int Mcasioinven1,int Fcasioinven1 ,int Mcasioinven2,int Fcasioinven2 ,int Momegainven1,int Fomegainven1 ,int Momegainven2 ,int Fomegainven2 ,int Mrolexinven1 ,int Frolexinven1  ,int Mrolexinven2 ,int Frolexinven2  ,int Mswatchinven1 ,int Fswatchinven1 ,int Mswatchinven2 ,int Fswatchinven2 ,int Mradoinven1 ,int Fradoinven1,int Mradoinven2 ,int Fradoinven2 ){
         super.Mcasioinven1 = Mcasioinven1;        
         super.Fcasioinven1 = Fcasioinven1;
@@ -34,6 +37,7 @@ public class menu extends watch {
     }   
       public void show(){
       int want;
+      
       do{
         do{ 
             System.out.println("\n");
@@ -49,7 +53,7 @@ public class menu extends watch {
             numbermodel = a.nextInt();
         }while(numbermodel != 1&& numbermodel != 2&& numbermodel != 3&& numbermodel != 4&& numbermodel !=5 );
         System.out.println();
-            
+          
         if (numbermodel==1){
             casio.setMcasioinven1(super.Mcasioinven1);
             casio.setMcasioinven2(super.Mcasioinven2);
@@ -60,8 +64,7 @@ public class menu extends watch {
             super.Mcasioinven2 = casio.getMcasioinven2();
             super.Fcasioinven1 = casio.getFcasioinven1();
             super.Fcasioinven2 = casio.getFcasioinven2(); 
-                       
-            
+                           
         }else if (numbermodel==2){
             omega.setMomegainven1(super.Momegainven1);
             omega.setMomegainven2(super.Momegainven2);
@@ -72,6 +75,7 @@ public class menu extends watch {
             super.Momegainven2=omega.getMomegainven2();
             super.Fomegainven1=omega.getFomegainven1();
             super.Fomegainven2=omega.getFomegainven2();
+            
             
         }else if (numbermodel==3){ 
             rolex.setMrolexinven1(super.Mrolexinven1);
@@ -107,6 +111,7 @@ public class menu extends watch {
             super.Fradoinven2=rado.getFradoinven2();
             
         }
+       
          allsum = allsum+sumprice;   
         do{ 
             System.out.println("Do you want Watch Store Enter 1");
@@ -121,11 +126,11 @@ public class menu extends watch {
     }
       
     public void print() {  
+        
                 System.out.println("============================ Bill ===============================");
-                all all = new all();
-                all.print();
                 System.out.println("\t...........Summary Price : "+allsum+"...........");
-                System.out.println("=================================================================");                 
+                System.out.println("=================================================================");
+                allsum = 0;
             }
     
     public int getFcasioinven1() {

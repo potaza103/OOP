@@ -42,14 +42,16 @@ public class rado extends watch implements gender,qualities  {
             System.out.println("Enter Number : 2 for "+rado2+" Price: "+MPrado2+" >>Inventory " + Mradoinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mrado = model.nextInt(); 
-            System.out.println("");
+            
+            System.out.println();
         }while(Mrado != 1 && Mrado != 2);
         int i ;
         do{
             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Radoamount = model.nextInt();
-            System.out.println("");
+            
+            System.out.println();
             if(Mrado == 1){
                     if(Mradoinven1 < Radoamount ){
                         System.out.println("****************************");
@@ -68,7 +70,7 @@ public class rado extends watch implements gender,qualities  {
                         i++;
                     }
             }
-        }while(i>0);            
+        }while(i>0);
     }
     
    public void FemaleQualities(){
@@ -79,14 +81,16 @@ public class rado extends watch implements gender,qualities  {
             System.out.println("Enter Number : 2 for "+rado2+" Price : "+FPrado2+" >>Inventory : " + Fradoinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
             Frado = model.nextInt(); 
-            System.out.println("");
+            
+            System.out.println();
         }while(Frado != 1 && Frado != 2);
         int i;
         do{
             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Radoamount = model.nextInt();  
-            System.out.println("");
+            
+            System.out.println();
             if(Frado == 1){
                     if(Fradoinven1 < Radoamount ){
                         System.out.println("****************************");

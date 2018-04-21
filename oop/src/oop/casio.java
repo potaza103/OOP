@@ -1,7 +1,8 @@
 package oop;
 import java.util.Scanner;
+//import java.util.ArrayList;
 public class casio extends watch implements gender,qualities {       
-    
+    //ArrayList casio = new ArrayList();  
     public void show(){
         System.out.println("========================================================");
         System.out.println("                         Casio                          ");
@@ -34,6 +35,7 @@ public class casio extends watch implements gender,qualities {
     }
     
     public void MaleQualities(){
+        
         Scanner model = new Scanner(System.in);            
          do{
             System.out.println("Please select a model Male");
@@ -41,22 +43,24 @@ public class casio extends watch implements gender,qualities {
             System.out.println("Enter Number : 2 for "+casio2+" Price : "+MPcasio2+" >>Inventory : "+Mcasioinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mcasio = model.nextInt(); 
+            
             System.out.println();          
         }while(Mcasio != 1 && Mcasio != 2); 
          int i;
             do{
                 i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
-            Casioamount = model.nextInt();          
+            Casioamount = model.nextInt();  
             System.out.println();
+            
             if(Mcasio == 1){
-                    if(Mcasioinven1 < Casioamount){
+                if(Mcasioinven1 < Casioamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println();
                         i++;
-                    }
+                }
             }  
             if(Mcasio == 2){
                     if(Mcasioinven2 < Casioamount){
@@ -69,7 +73,7 @@ public class casio extends watch implements gender,qualities {
                 }
             }while(i>0);
     }
-    
+   
    public void FemaleQualities(){
         Scanner model = new Scanner(System.in);          
             do{                       
@@ -78,13 +82,14 @@ public class casio extends watch implements gender,qualities {
             System.out.println("Enter Number : 2 for "+casio2+" Price : "+FPcasio2+" >>Inventory : "+Fcasioinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
             Fcasio = model.nextInt(); 
+            
             System.out.println();                      
         }while(Fcasio != 1 && Fcasio != 2);
         int i;
           do{
             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
-            Casioamount = model.nextInt();          
+            Casioamount = model.nextInt(); 
             System.out.println();
             if(Fcasio == 1){
                     if(Fcasioinven1 < Casioamount){
@@ -103,7 +108,7 @@ public class casio extends watch implements gender,qualities {
                         System.out.println();
                         i++;
                     }
-                }
+                } 
             }while(i>0);                                       
     }       
     
@@ -115,7 +120,7 @@ public class casio extends watch implements gender,qualities {
                 Mcasioinven1 = Mcasioinven1 - Casioamount;
             }
             else{            
-            sumprice = MPcasio2 * Casioamount;
+                sumprice = MPcasio2 * Casioamount;
                 System.out.println("Male "+casio2+" amount : "+Casioamount+" Price : "+sumprice);
                 Mcasioinven2 = Mcasioinven2 - Casioamount;
             }              

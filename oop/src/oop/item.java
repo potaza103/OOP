@@ -29,6 +29,7 @@ public  class item extends watch {
     }  
     
     public void show() {
+        do{
         System.out.println("    ===========***************************===========");
         System.out.println("    =================Inventory Status================");
         System.out.println("    ===========***************************===========");     
@@ -64,7 +65,9 @@ public  class item extends watch {
         System.out.println("    ================================================="); 
         System.out.print("\n Please select Product you want to add : ");  
         product = inven.nextInt();
-        print();       
+        }while(product != 1 && product != 2 && product != 3 && product != 4 && product != 5);
+        print(); 
+        
     }
     
     public void print(){       
