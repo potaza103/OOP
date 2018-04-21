@@ -70,7 +70,6 @@ public class watchlog extends login {
                         System.out.println("********Again, to confirm yourself.*********");
                         login.loginCus();
                     }
-                    System.out.println(Mcasioinven1);
                     menu menu = new menu( Mcasioinven1, Fcasioinven1 , Mcasioinven2 , Fcasioinven2  ,Momegainven1  ,Fomegainven1  , Momegainven2, Fomegainven2 , Mrolexinven1 , Frolexinven1  , Mrolexinven2, Frolexinven2 , Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1  ,Fradoinven1, Mradoinven2 , Fradoinven2 ); 
                     menu.show();
                     
