@@ -1,8 +1,7 @@
 package oop;
 public class all extends watch{  
        
-    public void print() {       
-  
+    public void print() {    
 //Casio 
         if(Mcasio == 1){            
             sumprice = MPcasio1 * Casioamount;

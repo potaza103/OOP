@@ -15,10 +15,8 @@ public abstract class watch extends inventory {
     static double allsum;
     static double sumprice;   
     static int Casioamount,Omegaamount,Rolexamount,Swatchamount,Radoamount;
-//    int numbermodel;
     static int sex;
     static int count=1;
-//    static int want;
     
     public void thank(){      
         System.out.println("   ======================= THANK YOU  ========================");      

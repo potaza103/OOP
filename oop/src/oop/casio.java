@@ -25,9 +25,11 @@ public class casio extends watch implements gender,qualities {
     public void gender(){     
         if(sex == 1){
             MaleQualities();
+            Msum();  
         }
         else {
             FemaleQualities();
+            Fsum(); 
         }             
     }
     
@@ -50,11 +52,8 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        MaleQualities() ;
                     }
-                    else{
-                        Msum();    
-                    } 
             }
             if(Mcasio == 2){
                     if(Mcasioinven2 < Casioamount){
@@ -62,11 +61,8 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
-            }
-                    else{
-                    Msum();    
-            }
+                        MaleQualities() ;
+                    }
             }
     }
     
@@ -89,11 +85,8 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
-            }
-                    else{
-                    Fsum();    
-            } 
+                        FemaleQualities();
+                    }
             }
             if(Fcasio == 2){
                     if(Fcasioinven2 < Casioamount){
@@ -101,11 +94,8 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
-            }
-                    else{
-                    Fsum();    
-            }
+                        FemaleQualities();
+                    }
             }                                                   
     }       
     

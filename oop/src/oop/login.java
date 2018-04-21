@@ -6,7 +6,7 @@ public class login {
     
     //loginemployee
     int c;
-    int count;
+    int count = 3;
     static String UsernameLog ;
     static String PasswordLog ;
     private String UsernameEmp ;
@@ -47,25 +47,20 @@ public class login {
             UsernameLog = LoginEmployee.nextLine();
             System.out.print("Password >>>>> ");
             PasswordLog = LoginEmployee.nextLine();
-            
+            System.out.println();
             if(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))&&count!=0){
                 System.out.println();
-                System.out.println("Password is incorrect, system will shutdown if it is wrong "+count+" times.");           
+                System.out.println("Password is incorrect, system will shutdown if it is wrong "+count+" times.");
                 count--;
             }
-            else if(count==0){
-                System.out.println();
+            else if(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))||count==-1){               
                 System.out.println("====================================================");
                 System.out.println("  You locked more than 3 times the system shutdown");
                 System.out.println("    ===========================================");
-                System.exit(0);              
+                System.exit(0);                
             }
-          }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog)));      
-        
-       // login login = new login();
-        //login.loginstore();
+          }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))&&count!=-1);       
     }
-
     
     public void logincustomer(){
         System.out.println("    ===========***************************===========");
