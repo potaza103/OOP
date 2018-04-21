@@ -5,41 +5,42 @@ public class watchlog extends login {
     static int select;
     login login ;
 //    Casio
-    int Mcasioinven1 ;
-    int Fcasioinven1 ;
-    int Mcasioinven2 ; 
-    int Fcasioinven2 ;
+    int Mcasioinven1;
+    int Fcasioinven1;
+    int Mcasioinven2; 
+    int Fcasioinven2;
 //    Omega
-    int Momegainven1 ;
-    int Fomegainven1 ;
-    int Momegainven2 ;
-    int Fomegainven2 ;
+    int Momegainven1;
+    int Fomegainven1;
+    int Momegainven2;
+    int Fomegainven2;
 //    Rolex
-    int Mrolexinven1 ;
-    int Frolexinven1 ;
-    int Mrolexinven2 ;
-    int Frolexinven2 ;
+    int Mrolexinven1;
+    int Frolexinven1;
+    int Mrolexinven2;
+    int Frolexinven2;
 //    Swatch
-    int Mswatchinven1 ;
-    int Fswatchinven1 ;
-    int Mswatchinven2 ;
-    int Fswatchinven2 ;
+    int Mswatchinven1;
+    int Fswatchinven1;
+    int Mswatchinven2;
+    int Fswatchinven2;
 //    Rado
-    int Mradoinven1 ;
-    int Fradoinven1 ;
-    int Mradoinven2 ;
-    int Fradoinven2 ;
+    int Mradoinven1;
+    int Fradoinven1;
+    int Mradoinven2;
+    int Fradoinven2;
     
     watchlog(){
         super();
         System.out.println();
-        System.out.println("====================WELLCOME TO WATCH STORE===============");
-        System.out.println("================The service is available online===========");
+        System.out.println("  ================== WELLCOME TO WATCH STORE =============");
+        System.out.println("    ============ The service is available online =======");
     }
     
     public void loginstore(){
         login = new login("admin","1234");      
         do{
+            System.out.println(); 
             System.out.println("Please select your identity");
             System.out.println("Press 1 : Customer   ");
             System.out.println("Press 2 : Employee  ");
@@ -47,8 +48,7 @@ public class watchlog extends login {
             Scanner are_member = new Scanner(System.in);
             select = are_member.nextInt();
         }while (select != 1 && select != 2);
-            System.out.println("");
-        
+            System.out.println("");        
             if(select == 1){
                 login.logincustomer();
                 do{
@@ -108,9 +108,15 @@ public class watchlog extends login {
                 login.loginemp();
                 
                 item item = new item( Mcasioinven1, Fcasioinven1, Mcasioinven2, Fcasioinven2 ,Momegainven1 ,Fomegainven1 , Momegainven2  , Fomegainven2 , Mrolexinven1, Frolexinven1 , Mrolexinven2 , Frolexinven2, Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1 ,Fradoinven1, Mradoinven2 , Fradoinven2 );
-                
-                System.out.println("");
                 item.show();
+                System.out.println();
+                System.out.println("======================= THANK YOU =========================");
+                System.out.println("   =====================================================");
+                System.out.println();                
+                System.out.println();
+//                //วนไปซื้อใหม่ถ้า แอดสินค้าก่อนซื้อ
+//                watchlog watchlog = new watchlog();
+//                watchlog.loginstore();
 //                  Casio
                     Mcasioinven1 = item.getMcasioinven1();  
                     Fcasioinven1 = item.getFcasioinven1();

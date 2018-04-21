@@ -7,27 +7,26 @@ public class login {
     //loginemployee
     int c;
     int count = 3;
-    static String UsernameLog ;
-    static String PasswordLog ;
-    private String UsernameEmp ;
-    private String PasswordEmp ;
+    static String UsernameLog;
+    static String PasswordLog;
+    private String UsernameEmp;
+    private String PasswordEmp;
     //logincustomer 
-    static String UsernameCus ;
-    static String PasswordCus ;
-    static String UsernameCusStr ;
-    static String PasswordCusStr ;
-    static String UsernameLogCus ;
-    static String PasswordLogCus ;       
-    private String UsernameLogCus1 = "Aom" ;
-    private String PasswordLogCus1 = "1234" ;
-    private String UsernameLogCus2 = "Pota" ;
-    private String PasswordLogCus2 = "1234" ;
+    static String UsernameCus;
+    static String PasswordCus;
+    static String UsernameCusStr;
+    static String PasswordCusStr;
+    static String UsernameLogCus;
+    static String PasswordLogCus;       
+    private String UsernameLogCus1 = "Aom";
+    private String PasswordLogCus1 = "1234";
+    private String UsernameLogCus2 = "Pota";
+    private String PasswordLogCus2 = "1234";
     static int member;
     
     login(){
-        for(int i = 1 ; i <=20 ; i++)
-        System.out.print("=");   
-        System.out.println(); 
+        for(int i = 1 ; i <=60 ; i++)
+        System.out.print("=");           
     }
     
     login(String UsernameEmp,String PasswordEmp){

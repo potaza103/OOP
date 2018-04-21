@@ -8,11 +8,12 @@ public class menu extends watch {
     rolex rolex = new rolex();
     swatch swatch = new swatch();
     Scanner a = new Scanner(System.in);
+    String E;
 //    char yes = 'y' ;
 //    char yes1 = 'Y' ; 
     menu (int Mcasioinven1,int Fcasioinven1 ,int Mcasioinven2,int Fcasioinven2 ,int Momegainven1,int Fomegainven1 ,int Momegainven2 ,int Fomegainven2 ,int Mrolexinven1 ,int Frolexinven1  ,int Mrolexinven2 ,int Frolexinven2  ,int Mswatchinven1 ,int Fswatchinven1 ,int Mswatchinven2 ,int Fswatchinven2 ,int Mradoinven1 ,int Fradoinven1,int Mradoinven2 ,int Fradoinven2 ){
         this.Mcasioinven1 = Mcasioinven1;
-        this.Fcasioinven1 = Fcasioinven1 ;
+        this.Fcasioinven1 = Fcasioinven1;
         this.Mcasioinven2 =  Mcasioinven2;
         this.Fcasioinven2 = Fcasioinven2;
         this.Momegainven1 = Momegainven1;
@@ -27,10 +28,10 @@ public class menu extends watch {
         this.Fswatchinven1 = Fswatchinven1;
         this.Mswatchinven2 = Mswatchinven2;
         this.Fswatchinven2 = Fswatchinven2;
-        this.Mradoinven1 = Mradoinven1 ;
-        this.Fradoinven1= Fradoinven1;
+        this.Mradoinven1 = Mradoinven1;
+        this.Fradoinven1 = Fradoinven1;
         this.Mradoinven2 = Mradoinven2;
-        this.Fradoinven2= Fradoinven2 ;    
+        this.Fradoinven2 = Fradoinven2;    
     }   
       public void show(){
         do{   
@@ -80,12 +81,13 @@ public class menu extends watch {
                 all.print();
                 System.out.println("\t...........Summary Price : "+allsum+"...........");
                 System.out.println("=================================================================");
-//                    do{
-//                        Scanner put = new Scanner(System.in);
-//                        System.out.print("Do you want to exit ? (Y/N)");               
-//                        String E = put.nextLine();
-//                        char e = E.charAt(0);
-//                    }while(!(e.equals(yes)&& e.equals(yes1)));
+                    do{
+                        Scanner put = new Scanner(System.in);
+                        System.out.print("Do you want to Logout ? (Y/N) : ");               
+                        E = put.nextLine();
+                        watchlog watchlog = new watchlog();
+                        watchlog.loginstore();
+                    }while("Y".equals(E) && "y".equals(E));
                 super.thank();
             }
     }
