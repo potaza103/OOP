@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class casio extends watch implements gender,qualities {       
     
     public void show(){
-       System.out.println("========================================================");
-       System.out.println("                         Casio                          ");
-       System.out.println("========================================================"); 
+        System.out.println("========================================================");
+        System.out.println("                         Casio                          ");
+        System.out.println("========================================================"); 
         print();
         } 
       
@@ -17,7 +17,7 @@ public class casio extends watch implements gender,qualities {
         System.out.print("Enter Number : >>>>>>>>>> ");
         Scanner gender = new Scanner(System.in);
         sex = gender.nextInt();
-        System.out.println("");
+        System.out.println();
         }while(sex !=1 && sex !=2);
         gender();             
     }
@@ -41,11 +41,11 @@ public class casio extends watch implements gender,qualities {
             System.out.println("Enter Number : 2 for "+casio2+" Price : "+MPcasio2+" >>Inventory : "+Mcasioinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mcasio = model.nextInt(); 
-            System.out.println("");          
+            System.out.println();          
         }while(Mcasio != 1 && Mcasio != 2);        
             System.out.print("How many do you want ? >>>>>>>>> ");
             Casioamount = model.nextInt();          
-            System.out.println("");
+            System.out.println();
             if(Mcasio == 1){
                     if(Mcasioinven1 < Casioamount){
                         System.out.println("****************************");
@@ -60,7 +60,7 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
-                        System.out.println("");
+                        System.out.println();
                         MaleQualities() ;
                     }
             }
@@ -74,11 +74,11 @@ public class casio extends watch implements gender,qualities {
             System.out.println("Enter Number : 2 for "+casio2+" Price : "+FPcasio2+" >>Inventory : "+Fcasioinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
             Fcasio = model.nextInt(); 
-            System.out.println("");                      
+            System.out.println();                      
         }while(Fcasio != 1 && Fcasio != 2);
             System.out.print("How many do you want ? >>>>>>>>> ");
             Casioamount = model.nextInt();  
-            System.out.println("");
+            System.out.println();
             if(Fcasio == 1){
                     if(Fcasioinven1 < Casioamount ){
                         System.out.println("****************************");
@@ -93,7 +93,7 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
-                        System.out.println("");
+                        System.out.println();
                         FemaleQualities();
                     }
             }                                                   
@@ -128,6 +128,6 @@ public class casio extends watch implements gender,qualities {
                 Fcasioinven2 = Fcasioinven2 - Casioamount;
             }
             System.out.println("===========================================================================");
-            System.out.println("");      
+            System.out.println();      
     }
 }

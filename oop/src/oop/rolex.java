@@ -23,13 +23,15 @@ public class rolex extends watch implements gender,qualities{
         gender();
     }
      
-    public void gender(){ 
+ public void gender(){     
         if(sex == 1){
             MaleQualities();
+            Msum(); 
         }
         else {
             FemaleQualities();
-        }    
+            Fsum(); 
+        }             
     }
     
     public void MaleQualities(){
@@ -52,10 +54,7 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            } 
+                    }
             }
             if(Mrolex == 2){
                     if(Mrolexinven2 < Rolexamount){
@@ -64,10 +63,7 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            }
+                    }
             }           
     }
     
@@ -91,10 +87,7 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            } 
+                    }
             }
             if(Frolex == 2){
                     if(Frolexinven2 < Rolexamount){
@@ -103,10 +96,7 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            }
+                    }
             }                              
     }
    
@@ -123,7 +113,7 @@ public class rolex extends watch implements gender,qualities{
                 Mradoinven2 = Mradoinven2-Rolexamount;
             }             
             System.out.println("===========================================================================");
-            System.out.println("");  
+            System.out.println();  
         }
    public void Fsum(){
             System.out.println("=============================== Show Detail ===============================");
@@ -138,7 +128,7 @@ public class rolex extends watch implements gender,qualities{
                 Fradoinven2 = Fradoinven2-Rolexamount;
             } 
             System.out.println("===========================================================================");
-            System.out.println("");    
+            System.out.println();    
    } 
    
 }

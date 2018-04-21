@@ -18,7 +18,7 @@ public class rado extends watch implements gender,qualities  {
         System.out.print("Enter Number : >>>>>>>>>> ");
         Scanner gender = new Scanner(System.in);
         sex = gender.nextInt();
-        System.out.println("");
+        System.out.println();
         }while(sex !=1 && sex !=2);
         gender();
     }
@@ -26,22 +26,24 @@ public class rado extends watch implements gender,qualities  {
     public void gender(){     
         if(sex == 1){
             MaleQualities();
+            Msum(); 
         }
         else {
             FemaleQualities();
+            Fsum(); 
         }             
     }
     
     public void MaleQualities(){
         Scanner model = new Scanner(System.in);
-         do{
+        do{
             System.out.println("Please select a model Male");
             System.out.println("Enter Number : 1 for "+rado1+" Price: "+MPrado1+" >>Inventory " + Mradoinven1 );
             System.out.println("Enter Number : 2 for "+rado2+" Price: "+MPrado2+" >>Inventory " + Mradoinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mrado = model.nextInt(); 
             System.out.println("");
-          }while(Mrado != 1 && Mrado != 2);  
+        }while(Mrado != 1 && Mrado != 2);  
             System.out.print("How many do you want ? >>>>>>>>> ");
             Radoamount = model.nextInt();
             System.out.println("");
@@ -52,10 +54,7 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            } 
+                    }
             }
             if(Mrado == 2){
                     if(Mradoinven2 < Radoamount){
@@ -64,10 +63,7 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            }
+                    }
             }            
     }
     
@@ -91,10 +87,7 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            } 
+                    }
             }
             if(Frado == 2){
                     if(Fradoinven2 < Radoamount){
@@ -103,10 +96,7 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            }
+                    }
             }                               
     }
    
@@ -124,7 +114,7 @@ public class rado extends watch implements gender,qualities  {
             Mradoinven2 = Mradoinven2 - Radoamount;
             }           
             System.out.println("===========================================================================");
-            System.out.println(""); 
+            System.out.println(); 
         }
    public void Fsum(){
             System.out.println("=============================== Show Detail ===============================");
@@ -139,6 +129,6 @@ public class rado extends watch implements gender,qualities  {
             Fradoinven2 = Fradoinven2 - Radoamount;
             } 
             System.out.println("===========================================================================");
-            System.out.println("");
+            System.out.println();
    }   
 }

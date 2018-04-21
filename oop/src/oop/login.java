@@ -27,7 +27,7 @@ public class login {
     login(){
         for(int i = 1 ; i <=20 ; i++)
         System.out.print("=");   
-        System.out.print(""); 
+        System.out.println(); 
     }
     
     login(String UsernameEmp,String PasswordEmp){

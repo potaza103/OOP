@@ -23,13 +23,15 @@ public class swatch extends watch  implements gender,qualities{
         gender();
     }
    
-    public void gender(){ 
+    public void gender(){     
         if(sex == 1){
             MaleQualities();
+            Msum(); 
         }
         else {
             FemaleQualities();
-        }    
+            Fsum(); 
+        }             
     }
     
     public void MaleQualities(){
@@ -52,10 +54,7 @@ public class swatch extends watch  implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            } 
+                    }
             }
             if(Mswatch == 2){
                     if(Mswatchinven2 < Swatchamount){
@@ -64,10 +63,7 @@ public class swatch extends watch  implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            }
+                    }
             }          
     }
     
@@ -91,10 +87,7 @@ public class swatch extends watch  implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            } 
+                    }
             }
             if(Fswatch == 2){
                     if(Fswatchinven2 < Swatchamount){
@@ -103,10 +96,7 @@ public class swatch extends watch  implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            }
+                    }
             }                              
     }
    
@@ -123,7 +113,7 @@ public class swatch extends watch  implements gender,qualities{
                 Mswatchinven2 = Mswatchinven2-Swatchamount;
             }             
             System.out.println("===========================================================================");
-            System.out.println(""); 
+            System.out.println(); 
         }
    public void Fsum(){
             System.out.println("============================== Show Detail ================================");
@@ -138,7 +128,7 @@ public class swatch extends watch  implements gender,qualities{
                 Fswatchinven2 = Fswatchinven2-Swatchamount;
             } 
             System.out.println("===========================================================================");
-            System.out.println("");
+            System.out.println();
    }     
 
 

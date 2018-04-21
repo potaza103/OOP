@@ -22,13 +22,15 @@ public class omega extends watch implements gender,qualities {
         gender();             
     }
 
-    public void gender(){ 
+    public void gender(){     
         if(sex == 1){
             MaleQualities();
+            Msum(); 
         }
         else {
             FemaleQualities();
-        }    
+            Fsum(); 
+        }             
     }
     
     public void MaleQualities(){
@@ -51,10 +53,7 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            } 
+                    }
             }
             if(Momega == 2){
                     if(Momegainven2 < Omegaamount){
@@ -63,10 +62,7 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Msum();    
-            }
+                    }
             }          
     }
     
@@ -90,10 +86,7 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            } 
+                    }
             }
             if(Fomega == 2){
                     if(Fomegainven2 < Omegaamount){
@@ -102,10 +95,7 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("");
                         print();
-            }
-                    else{
-                    Fsum();    
-            }
+                    }
             }                                             
     }
    
@@ -122,7 +112,7 @@ public class omega extends watch implements gender,qualities {
                 Momegainven2 = Momegainven2-Omegaamount;
             }             
             System.out.println("===========================================================================");
-            System.out.println(""); 
+            System.out.println(); 
         }
    
    public void Fsum(){
@@ -138,7 +128,7 @@ public class omega extends watch implements gender,qualities {
                 Fomegainven2 = Fomegainven2-Omegaamount;
             } 
             System.out.println("===========================================================================");
-            System.out.println(""); 
+            System.out.println(); 
    }
 
 }
