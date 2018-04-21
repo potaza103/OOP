@@ -55,7 +55,7 @@ public class rolex extends watch implements gender,qualities{
             if(Mrolex == 1){
                     if(Mrolexinven1 < Rolexamount ){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println(""); 
                         i++;
@@ -64,7 +64,7 @@ public class rolex extends watch implements gender,qualities{
             if(Mrolex == 2){
                     if(Mrolexinven2 < Rolexamount){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println("");
                         i++;
@@ -94,7 +94,7 @@ public class rolex extends watch implements gender,qualities{
             if(Frolex == 1){
                     if(Frolexinven1 < Rolexamount ){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println("");  
                         i++;
@@ -103,7 +103,7 @@ public class rolex extends watch implements gender,qualities{
             if(Frolex == 2){
                     if(Frolexinven2 < Rolexamount){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println("");
                         i++;

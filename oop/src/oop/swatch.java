@@ -55,7 +55,7 @@ public class swatch extends watch  implements gender,qualities{
             if(Mswatch == 1){
                     if(Mswatchinven1 < Swatchamount ){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println("");
                         i++;
@@ -64,7 +64,7 @@ public class swatch extends watch  implements gender,qualities{
             if(Mswatch == 2){
                     if(Mswatchinven2 < Swatchamount){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println("");
                         i++;
@@ -92,7 +92,7 @@ public class swatch extends watch  implements gender,qualities{
             if(Fswatch == 1){
                     if(Fswatchinven1 < Swatchamount ){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println("");
                         i++;
@@ -101,7 +101,7 @@ public class swatch extends watch  implements gender,qualities{
             if(Fswatch == 2){
                     if(Fswatchinven2 < Swatchamount){
                         System.out.println("****************************");
-                        System.out.println("     Amount not enough");
+                        System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
                         System.out.println("");
                         i++;
