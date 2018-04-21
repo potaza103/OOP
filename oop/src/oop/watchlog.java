@@ -6,29 +6,29 @@ public class watchlog extends login {
     login login ;
 //    Casio
     int Mcasioinven1 = 12;
-    int Fcasioinven1;
-    int Mcasioinven2; 
-    int Fcasioinven2;
+    int Fcasioinven1 = 10;
+    int Mcasioinven2 = 10; 
+    int Fcasioinven2 = 13;
 //    Omega
-    int Momegainven1;
-    int Fomegainven1;
-    int Momegainven2;
-    int Fomegainven2;
+    int Momegainven1 = 13;
+    int Fomegainven1 = 14;
+    int Momegainven2 = 10;
+    int Fomegainven2 = 12;
 //    Rolex
-    int Mrolexinven1;
-    int Frolexinven1;
-    int Mrolexinven2;
-    int Frolexinven2;
+    int Mrolexinven1 = 11;
+    int Frolexinven1 = 14;
+    int Mrolexinven2 = 12;
+    int Frolexinven2 = 13;
 //    Swatch
-    int Mswatchinven1;
-    int Fswatchinven1;
-    int Mswatchinven2;
-    int Fswatchinven2;
+    int Mswatchinven1 = 10;
+    int Fswatchinven1 = 12;
+    int Mswatchinven2 = 12;
+    int Fswatchinven2 = 13;
 //    Rado
-    int Mradoinven1;
-    int Fradoinven1;
-    int Mradoinven2;
-    int Fradoinven2;
+    int Mradoinven1 = 14;
+    int Fradoinven1 = 10;
+    int Mradoinven2 = 12;
+    int Fradoinven2 = 12;
     
     watchlog(){
         super();
