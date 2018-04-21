@@ -12,28 +12,30 @@ public class menu extends watch {
 //    char yes = 'y' ;
 //    char yes1 = 'Y' ; 
     menu (int Mcasioinven1,int Fcasioinven1 ,int Mcasioinven2,int Fcasioinven2 ,int Momegainven1,int Fomegainven1 ,int Momegainven2 ,int Fomegainven2 ,int Mrolexinven1 ,int Frolexinven1  ,int Mrolexinven2 ,int Frolexinven2  ,int Mswatchinven1 ,int Fswatchinven1 ,int Mswatchinven2 ,int Fswatchinven2 ,int Mradoinven1 ,int Fradoinven1,int Mradoinven2 ,int Fradoinven2 ){
-        this.Mcasioinven1 = Mcasioinven1;
-        this.Fcasioinven1 = Fcasioinven1;
-        this.Mcasioinven2 =  Mcasioinven2;
-        this.Fcasioinven2 = Fcasioinven2;
-        this.Momegainven1 = Momegainven1;
-        this.Fomegainven1 = Fomegainven1;
-        this.Momegainven2 = Momegainven2;
-        this.Fomegainven2 = Fomegainven2;
-        this.Mrolexinven1 = Mrolexinven1;
-        this.Frolexinven1 = Frolexinven1;
-        this.Mrolexinven2 = Mrolexinven2;
-        this.Frolexinven2 = Frolexinven2;
-        this.Mswatchinven1 = Mswatchinven1;
-        this.Fswatchinven1 = Fswatchinven1;
-        this.Mswatchinven2 = Mswatchinven2;
-        this.Fswatchinven2 = Fswatchinven2;
-        this.Mradoinven1 = Mradoinven1;
-        this.Fradoinven1 = Fradoinven1;
-        this.Mradoinven2 = Mradoinven2;
-        this.Fradoinven2 = Fradoinven2;    
+        super.Mcasioinven1 = Mcasioinven1;
+        super.Fcasioinven1 = Fcasioinven1;
+        super.Mcasioinven2 =  Mcasioinven2;
+        super.Fcasioinven2 = Fcasioinven2;
+        super.Momegainven1 = Momegainven1;
+        super.Fomegainven1 = Fomegainven1;
+        super.Momegainven2 = Momegainven2;
+        super.Fomegainven2 = Fomegainven2;
+        super.Mrolexinven1 = Mrolexinven1;
+        super.Frolexinven1 = Frolexinven1;
+        super.Mrolexinven2 = Mrolexinven2;
+        super.Frolexinven2 = Frolexinven2;
+        super.Mswatchinven1 = Mswatchinven1;
+        super.Fswatchinven1 = Fswatchinven1;
+        super.Mswatchinven2 = Mswatchinven2;
+        super.Fswatchinven2 = Fswatchinven2;
+        super.Mradoinven1 = Mradoinven1;
+        super.Fradoinven1 = Fradoinven1;
+        super.Mradoinven2 = Mradoinven2;
+        super.Fradoinven2 = Fradoinven2;    
     }   
       public void show(){
+      int want;
+      do{
         do{   
             System.out.println("========================================================");
             System.out.println("\t\t Welcome To Watch Store");
@@ -48,7 +50,16 @@ public class menu extends watch {
         }while(numbermodel != 1&& numbermodel != 2&& numbermodel != 3&& numbermodel != 4&& numbermodel !=5 );
         System.out.println();
         if(numbermodel==1){   
+            System.out.println("Mcasioinven1 " + Mcasioinven1);
+            casio.setMcasioinven1(Mcasioinven1);
+            casio.setMcasioinven2(Mcasioinven2);
+            casio.setFcasioinven1(Fcasioinven1);
+            casio.setFcasioinven2(Fcasioinven2);
             casio.show();
+            super.Mcasioinven1 = getMcasioinven1();
+            super.Mcasioinven2 = getMcasioinven2();
+            super.Fcasioinven1 = getFcasioinven1();
+            super.Fcasioinven2 = getFcasioinven2();
         }else if (numbermodel==2){
             omega.show();   
         }else if (numbermodel==3){             
@@ -58,39 +69,28 @@ public class menu extends watch {
         }else if (numbermodel==5){          
             rado.show();
         }
-        print();
-    }
-      
-    public void print() {  
-        int want;
-        do{       
+         allsum = allsum+sumprice;   
+        do{
             System.out.println("Do you want Watch Store Enter 1");
             System.out.println("Do you want Check bill  Enter 2");
             System.out.print("Enter Number : >>>>>>>>>> ");            
             Scanner want1 = new Scanner(System.in);
             want = want1.nextInt();
-            System.out.println("");           
-        }while(want !=1 && want !=2);
-            if(want == 1){                 
-                allsum = allsum+sumprice;          
-                show(); 
-            }else {  
-                allsum = allsum+sumprice;
+            System.out.println("");     
+        }while(want !=1 && want !=2); 
+      }while(want == 1);
+        print();
+    }
+      
+    public void print() {  
                 System.out.println("============================ Bill ===============================");
                 all all = new all();
                 all.print();
                 System.out.println("\t...........Summary Price : "+allsum+"...........");
                 System.out.println("=================================================================");
-                    do{
-                        Scanner put = new Scanner(System.in);
-                        System.out.print("Do you want to Logout ? (Y/N) : ");               
-                        E = put.nextLine();
-                        watchlog watchlog = new watchlog();
-                        watchlog.loginstore();
-                    }while("Y".equals(E) && "y".equals(E));
-                super.thank();
+                  
             }
-    }
+    
     public int getFcasioinven1() {
         return Fcasioinven1;
     }

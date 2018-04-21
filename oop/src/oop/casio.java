@@ -130,4 +130,38 @@ public class casio extends watch implements gender,qualities {
             System.out.println("===========================================================================");
             System.out.println();      
     }
+
+    public int getMcasioinven1() {
+        return Mcasioinven1;
+    }
+
+    public void setMcasioinven1(int Mcasioinven1) {
+        super.Mcasioinven1 = Mcasioinven1;
+        System.out.println(Mcasioinven1);
+    }
+
+    public int getFcasioinven1() {
+        return Fcasioinven1;
+    }
+
+    public void setFcasioinven1(int Fcasioinven1) {
+        super.Fcasioinven1 = Fcasioinven1;
+    }
+
+    public int getMcasioinven2() {
+        return Mcasioinven2;
+    }
+
+    public void setMcasioinven2(int Mcasioinven2) {
+        super.Mcasioinven2 = Mcasioinven2;
+    }
+
+    public int getFcasioinven2() {
+        return Fcasioinven2;
+    }
+
+    public void setFcasioinven2(int Fcasioinven2) {
+        super.Fcasioinven2 = Fcasioinven2;
+    }
+    
 }

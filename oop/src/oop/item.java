@@ -4,27 +4,28 @@ import java.util.Scanner;
 public  class item extends watch {
     int product ;
     Scanner inven = new Scanner(System.in);
+    
     item (int Mcasioinven1,int Fcasioinven1 ,int Mcasioinven2   ,int Fcasioinven2  ,int Momegainven1,int Fomegainven1 ,int Momegainven2 ,int Fomegainven2  ,int Mrolexinven1 ,int Frolexinven1  ,int Mrolexinven2 ,int Frolexinven2 ,int Mswatchinven1  ,int Fswatchinven1  ,int Mswatchinven2  ,int Fswatchinven2  ,int Mradoinven1 ,int Fradoinven1,int Mradoinven2 ,int Fradoinven2 ){
-        this.Mcasioinven1 = Mcasioinven1;
-        this.Fcasioinven1 = Fcasioinven1;
-        this.Mcasioinven2 = Mcasioinven2;
-        this.Fcasioinven2 = Fcasioinven2;
-        this.Momegainven1 = Momegainven1;
-        this.Fomegainven1 = Fomegainven1;
-        this.Momegainven2 = Momegainven2;
-        this.Fomegainven2 = Fomegainven2;
-        this.Mrolexinven1 = Mrolexinven1;
-        this.Frolexinven1 = Frolexinven1;
-        this.Mrolexinven2 = Mrolexinven2;
-        this.Frolexinven2 = Frolexinven2;
-        this.Mswatchinven1 = Mswatchinven1;
-        this.Fswatchinven1 = Fswatchinven1;
-        this.Mswatchinven2 = Mswatchinven2;
-        this.Fswatchinven2 = Fswatchinven2;
-        this.Mradoinven1 = Mradoinven1;
-        this.Fradoinven1 = Fradoinven1;
-        this.Mradoinven2 = Mradoinven2;
-        this.Fradoinven2 = Fradoinven2;  
+        super.Mcasioinven1 = Mcasioinven1;
+        super.Fcasioinven1 = Fcasioinven1;
+        super.Mcasioinven2 = Mcasioinven2;
+        super.Fcasioinven2 = Fcasioinven2;
+        super.Momegainven1 = Momegainven1;
+        super.Fomegainven1 = Fomegainven1;
+        super.Momegainven2 = Momegainven2;
+        super.Fomegainven2 = Fomegainven2;
+        super.Mrolexinven1 = Mrolexinven1;
+        super.Frolexinven1 = Frolexinven1;
+        super.Mrolexinven2 = Mrolexinven2;
+        super.Frolexinven2 = Frolexinven2;
+        super.Mswatchinven1 = Mswatchinven1;
+        super.Fswatchinven1 = Fswatchinven1;
+        super.Mswatchinven2 = Mswatchinven2;
+        super.Fswatchinven2 = Fswatchinven2;
+        super.Mradoinven1 = Mradoinven1;
+        super.Fradoinven1 = Fradoinven1;
+        super.Mradoinven2 = Mradoinven2;
+        super.Fradoinven2 = Fradoinven2;  
     }
     
     public void show() {
