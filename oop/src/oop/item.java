@@ -5,7 +5,7 @@ public  class item extends watch {
     int product ;
     Scanner inven = new Scanner(System.in);
     
-    item (int Mcasioinven1,int Fcasioinven1 ,int Mcasioinven2   ,int Fcasioinven2  ,int Momegainven1,int Fomegainven1 ,int Momegainven2 ,int Fomegainven2  ,int Mrolexinven1 ,int Frolexinven1  ,int Mrolexinven2 ,int Frolexinven2 ,int Mswatchinven1  ,int Fswatchinven1  ,int Mswatchinven2  ,int Fswatchinven2  ,int Mradoinven1 ,int Fradoinven1,int Mradoinven2 ,int Fradoinven2 ){
+    item (int Mcasioinven1,int Fcasioinven1 ,int Mcasioinven2 ,int Fcasioinven2 ,int Momegainven1,int Fomegainven1 ,int Momegainven2 ,int Fomegainven2  ,int Mrolexinven1 ,int Frolexinven1  ,int Mrolexinven2 ,int Frolexinven2 ,int Mswatchinven1  ,int Fswatchinven1  ,int Mswatchinven2  ,int Fswatchinven2  ,int Mradoinven1 ,int Fradoinven1,int Mradoinven2 ,int Fradoinven2 ){
         super.Mcasioinven1 = Mcasioinven1;
         super.Fcasioinven1 = Fcasioinven1;
         super.Mcasioinven2 = Mcasioinven2;
@@ -30,44 +30,44 @@ public  class item extends watch {
     
     public void show() {
         do{
-        System.out.println("    ===========***************************===========");
-        System.out.println("    =================Inventory Status================");
-        System.out.println("    ===========***************************===========");     
-        System.out.println();
-        System.out.println("Press 1 : Casio ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+casio1+" //Male: "+super.Mcasioinven1+" //Female: "+Fcasioinven1);
-        System.out.println(""+casio2+" //Male: "+Mcasioinven2+" //Female: "+Fcasioinven2); 
-        System.out.println("    =================================================");
-        System.out.println();
-        System.out.println("Press 2 : Omega ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+omega1+" //Male: "+Momegainven1+" //Female: "+Fomegainven1);
-        System.out.println(""+omega2+" //Male: "+Momegainven2+" //Female: "+Fomegainven2);
-        System.out.println("    =================================================");
-        System.out.println();
-        System.out.println("Press 3 : Rolex ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+rolex1+" //Male: "+Mrolexinven1+" //Female: "+Frolexinven1);
-        System.out.println(""+rolex2+" //Male: "+Mrolexinven2+" //Female: "+Frolexinven2);
-        System.out.println("    =================================================");
-        System.out.println();
-        System.out.println("Press 4 : Swatch ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+swatch1+" //Male: "+Mswatchinven1+" //Female: "+Fswatchinven1);
-        System.out.println(""+swatch2+" //Male: "+Mswatchinven2+" //Female: "+Fswatchinven2);
-        System.out.println("    =================================================");
-        System.out.println();
-        System.out.println("Press 5 : Rado ");
-        System.out.println("======================== Status ========================");
-        System.out.println(""+rado1+" //Male: "+Mradoinven1+" //Female: "+Fradoinven1);
-        System.out.println(""+rado2+" //Male: "+Mradoinven2+" //Female: "+Fradoinven2);
-        System.out.println("    ================================================="); 
-        System.out.print("\n Please select Product you want to add : ");  
-        product = inven.nextInt();
+            System.out.println("    ===========***************************===========");
+            System.out.println("    =================Inventory Status================");
+            System.out.println("    ===========***************************===========");     
+            System.out.println();
+            System.out.println("Press 1 : Casio ");
+            System.out.println("======================== Status ========================");
+            System.out.println(""+casio1+" //Male: "+super.Mcasioinven1+" //Female: "+Fcasioinven1);
+            System.out.println(""+casio2+" //Male: "+Mcasioinven2+" //Female: "+Fcasioinven2); 
+            System.out.println("    =================================================");
+            System.out.println();
+            System.out.println("Press 2 : Omega ");
+            System.out.println("======================== Status ========================");
+            System.out.println(""+omega1+" //Male: "+Momegainven1+" //Female: "+Fomegainven1);
+            System.out.println(""+omega2+" //Male: "+Momegainven2+" //Female: "+Fomegainven2);
+            System.out.println("    =================================================");
+            System.out.println();
+            System.out.println("Press 3 : Rolex ");
+            System.out.println("======================== Status ========================");
+            System.out.println(""+rolex1+" //Male: "+Mrolexinven1+" //Female: "+Frolexinven1);
+            System.out.println(""+rolex2+" //Male: "+Mrolexinven2+" //Female: "+Frolexinven2);
+            System.out.println("    =================================================");
+            System.out.println();
+            System.out.println("Press 4 : Swatch ");
+            System.out.println("======================== Status ========================");
+            System.out.println(""+swatch1+" //Male: "+Mswatchinven1+" //Female: "+Fswatchinven1);
+            System.out.println(""+swatch2+" //Male: "+Mswatchinven2+" //Female: "+Fswatchinven2);
+            System.out.println("    =================================================");
+            System.out.println();
+            System.out.println("Press 5 : Rado ");
+            System.out.println("======================== Status ========================");
+            System.out.println(""+rado1+" //Male: "+Mradoinven1+" //Female: "+Fradoinven1);
+            System.out.println(""+rado2+" //Male: "+Mradoinven2+" //Female: "+Fradoinven2);
+            System.out.println("    ================================================="); 
+            System.out.print("\n Please select Product you want to add : ");  
+            product = inven.nextInt();
         }while(product != 1 && product != 2 && product != 3 && product != 4 && product != 5);
-        print(); 
-        
+        print();
+        //เสร็จกลับไป class watchlog บรรทัด 112
     }
     
     public void print(){       
@@ -207,12 +207,11 @@ public  class item extends watch {
         
         while("Y".equals(D)||"y".equals(D)){
            System.out.println();
-           show(); break;
+           show(); break; //กลับไปเมธอดshow บรรทัด 31
         }                  
     }
 
-    
-      public int getFcasioinven1() {
+    public int getFcasioinven1() {
         return Fcasioinven1;
     }
 

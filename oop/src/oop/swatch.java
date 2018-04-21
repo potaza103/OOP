@@ -8,7 +8,8 @@ public class swatch extends watch  implements gender,qualities{
         System.out.println("                         Swatch                         ");
         System.out.println("========================================================");
         print();
-        } 
+        //หลุดเเล้ว กลับไป class menu.show(){} บรรทัด 92
+    } 
     
      public void print(){
         do{
@@ -21,16 +22,19 @@ public class swatch extends watch  implements gender,qualities{
         System.out.println();
         }while(sex !=1 && sex !=2);
         gender();
+        //หลุดเเล้ว กลับไป show(){}
     }
    
     public void gender(){     
         if(sex == 1){
             MaleQualities();
             Msum(); 
+            //หลุดเเล้ว กลับไป print(){}
         }
         else {
             FemaleQualities();
             Fsum(); 
+            //หลุดเเล้ว กลับไป print(){}
         }             
     }
     
@@ -71,6 +75,7 @@ public class swatch extends watch  implements gender,qualities{
                     }
             }
          }while(i>0);
+         //หลุดเเล้วกลับไป gender(){} ทำ Msum
     }
     
    public void FemaleQualities(){
@@ -83,14 +88,14 @@ public class swatch extends watch  implements gender,qualities{
             Fswatch = model.nextInt();
             System.out.println();
         }while(Fswatch != 1 && Fswatch != 2);
-        int i;
-        do{
+        int i; //ตัวเเปรวน
+        do{ 
             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Swatchamount = model.nextInt();  
             System.out.println();
             if(Fswatch == 1){
-                    if(Fswatchinven1 < Swatchamount ){
+                    if(Fswatchinven1 < Swatchamount ){  //สินค้าที่มี น้อยกว่าจำนวนที่ลูกค้าสั่งซื้อ?
                         System.out.println("****************************");
                         System.out.println("   The goods was sold-out");
                         System.out.println("****************************");
@@ -108,6 +113,7 @@ public class swatch extends watch  implements gender,qualities{
                     }
             }
         }while(i>0);
+        //หลุดเเล้วกลับไป gender(){} ทำ Fsum
     }
    
    public void Msum(){          
@@ -124,7 +130,9 @@ public class swatch extends watch  implements gender,qualities{
             }             
             System.out.println("===========================================================================");
             System.out.println(); 
+            //หลุดเเล้วกลับไป gender(){}
         }
+   
    public void Fsum(){
             System.out.println("============================== Show Detail ================================");
             if(Fswatch == 1) {
@@ -139,13 +147,14 @@ public class swatch extends watch  implements gender,qualities{
             } 
             System.out.println("===========================================================================");
             System.out.println();
+            //หลุดเเล้วกลับไป gender(){}
    }     
 
-    public int getMswatchinven1() {
+    public int getMswatchinven1() {   //เรียก
         return Mswatchinven1;
     }
 
-    public void setMswatchinven1(int Mswatchinven1) {
+    public void setMswatchinven1(int Mswatchinven1) {  //กำหนด
         super.Mswatchinven1 = Mswatchinven1;
     }
 

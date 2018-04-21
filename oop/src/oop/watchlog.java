@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class watchlog extends login {
     static int member;
     static int select;
-    login login ;
+    login login ; // ประกาศobjectของเเม่ 
        
 //    Casio
     int Mcasioinven1 = 12;
@@ -32,12 +32,12 @@ public class watchlog extends login {
     int Fradoinven2 = 12;
     
     watchlog(){
-        super();
+        super(); //class login
     }
     
     public void loginstore(){
         System.out.println();
-        login = new login("admin","1234"); 
+        login = new login("admin","1234"); //ฟิกค่า
         System.out.println();
         System.out.println("  ================== WELLCOME TO WATCH STORE ==================");
         System.out.println("    ============ The service is available online ============");
@@ -50,8 +50,10 @@ public class watchlog extends login {
             Scanner are_member = new Scanner(System.in);
             select = are_member.nextInt();
         }while (select != 1 && select != 2);
-            System.out.println("");        
-            if(select == 1){
+        
+            System.out.println("");    
+            //เลือก1 Customer
+            if(select == 1){ 
                 login.logincustomer();
                 do{
                     System.out.println("Are you a member");
@@ -63,42 +65,37 @@ public class watchlog extends login {
                 }while (member != 1 && member != 2);
                
                 System.out.println("");
-        
-                    if(member ==1){
+                    
+                    if(member ==1){ //ต้องหารloginเลย ซึ่งfigค่าไว้เเล้ว
                         login.loginFixCus();
-        
-                    }else if(member ==2) {
+                    }else if(member ==2) { //ไม่เป็นสมาชิก ต้องsignup
                         login.signupCus();
                         System.out.println("********Again, to confirm yourself.*********");
-                        login.loginCus();
+                        login.signinCus();
                     }
+                    
                     menu menu = new menu(Mcasioinven1, Fcasioinven1 , Mcasioinven2 , Fcasioinven2  ,Momegainven1  ,Fomegainven1  , Momegainven2, Fomegainven2 , Mrolexinven1 , Frolexinven1  , Mrolexinven2, Frolexinven2 , Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1  ,Fradoinven1, Mradoinven2 , Fradoinven2 ); 
                     menu.show();
-                    
 //                      casio
-                        Mcasioinven1 = menu.getMcasioinven1();  
+                        Mcasioinven1 = menu.getMcasioinven1();  //เรียกข้อมูล
                         Fcasioinven1 = menu.getFcasioinven1();
                         Mcasioinven2 = menu.getMcasioinven2();   
                         Fcasioinven2 = menu.getFcasioinven2(); 
-    
 //                      Omega
                         Momegainven1 = menu.getMomegainven1();
                         Fomegainven1 = menu.getFomegainven1();
                         Momegainven2 = menu.getMomegainven2();
                         Fomegainven2 = menu.getFomegainven2();
-    
 //                      Rolex
                         Mrolexinven1 = menu.getMrolexinven1();
                         Frolexinven1 = menu.getFrolexinven1();
                         Mrolexinven2 = menu.getMrolexinven2();
                         Frolexinven2 = menu.getFrolexinven2();
-    
 //                      Swatch
                         Mswatchinven1 = menu.getMswatchinven1();
                         Fswatchinven1 = menu.getFswatchinven1();
                         Mswatchinven2 = menu.getMswatchinven2();
                         Fswatchinven2 = menu.getFswatchinven2();
-    
 //                      Rado
                         Mradoinven1 = menu.getMradoinven1();
                         Fradoinven1 = menu.getFradoinven1();
@@ -106,44 +103,38 @@ public class watchlog extends login {
                         Fradoinven2 = menu.getFradoinven2();
                         
                         System.out.println("******************************************************************"); 
-        
+            
+            //ถ้าเลือก2 Employee
             }else if(select == 2) { 
                
                 login.loginemp();           
                 item item = new item( Mcasioinven1, Fcasioinven1, Mcasioinven2, Fcasioinven2 ,Momegainven1 ,Fomegainven1 , Momegainven2  , Fomegainven2 , Mrolexinven1, Frolexinven1 , Mrolexinven2 , Frolexinven2, Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1 ,Fradoinven1, Mradoinven2 , Fradoinven2 );
-                item.show();
-                                         
+                item.show(); //ไปบรรทัดที่ 31           
 //                  Casio
-                    Mcasioinven1 = item.getMcasioinven1();  
+                    Mcasioinven1 = item.getMcasioinven1();  //เรียกข้อมูล
                     Fcasioinven1 = item.getFcasioinven1();
                     Mcasioinven2 = item.getMcasioinven2();   
                     Fcasioinven2 = item.getFcasioinven2(); 
-    
 //                  Omega
                     Momegainven1 = item.getMomegainven1();
                     Fomegainven1 = item.getFomegainven1();
                     Momegainven2 = item.getMomegainven2();
                     Fomegainven2 = item.getFomegainven2();
-    
 //                  Rolex
                     Mrolexinven1 = item.getMrolexinven1();
                     Frolexinven1 = item.getFrolexinven1();
                     Mrolexinven2 = item.getMrolexinven2();
                     Frolexinven2 = item.getFrolexinven2();
-    
 //                  Swatch
                     Mswatchinven1 = item.getMswatchinven1();
                     Fswatchinven1 = item.getFswatchinven1();
                     Mswatchinven2 = item.getMswatchinven2();
                     Fswatchinven2 = item.getFswatchinven2();
-    
 //                  Rado
                     Mradoinven1 = item.getMradoinven1();
                     Fradoinven1 = item.getFradoinven1();
                     Mradoinven2 = item.getMradoinven2();
                     Fradoinven2 = item.getFradoinven2();
-                    
-    
             }
-    }
+    } //loginstore(){} หลุด กลับไป class project 'main' บรรทัด 10
 }

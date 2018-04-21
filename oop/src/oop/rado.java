@@ -8,6 +8,7 @@ public class rado extends watch implements gender,qualities  {
         System.out.println("                          Rado                          ");
         System.out.println("========================================================");
         print();
+        //หลุดเเล้ว กลับไป class menu.show(){} บรรทัด 103
         }
     
     public void print() {              
@@ -21,16 +22,19 @@ public class rado extends watch implements gender,qualities  {
         System.out.println();
         }while(sex !=1 && sex !=2);
         gender();
+        //หลุดเเล้ว กลับไป show(){}
     }
     
     public void gender(){     
         if(sex == 1){
             MaleQualities();
-            Msum(); 
+            Msum();
+            //หลุดเเล้ว กลับไป print(){}
         }
         else {
             FemaleQualities();
             Fsum(); 
+            //หลุดเเล้ว กลับไป print(){}
         }             
     }
     
@@ -71,6 +75,7 @@ public class rado extends watch implements gender,qualities  {
                     }
             }
         }while(i>0);
+        //หลุดเเล้วกลับไป gender(){} ทำ Msum
     }
     
    public void FemaleQualities(){
@@ -110,6 +115,7 @@ public class rado extends watch implements gender,qualities  {
                     }
             }
         }while(i>0);
+        //หลุดเเล้วกลับไป gender(){} ทำ Fsum
     }
    
    public void Msum(){
@@ -127,6 +133,7 @@ public class rado extends watch implements gender,qualities  {
             }           
             System.out.println("===========================================================================");
             System.out.println(); 
+            //หลุดเเล้วกลับไป gender(){}
         }
    public void Fsum(){
             System.out.println("=============================== Show Detail ===============================");
@@ -142,13 +149,14 @@ public class rado extends watch implements gender,qualities  {
             } 
             System.out.println("===========================================================================");
             System.out.println();
+            //หลุดเเล้วกลับไป gender(){}
    } 
 
-    public int getMradoinven1() {
+    public int getMradoinven1() {                   //เรียก 
         return Mradoinven1;
     }
 
-    public void setMradoinven1(int Mradoinven1) {
+    public void setMradoinven1(int Mradoinven1) {           //กำหนด
         super.Mradoinven1 = Mradoinven1;
     }
 

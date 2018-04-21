@@ -1,13 +1,13 @@
 package oop;
 import java.util.Scanner;
-//import java.util.ArrayList;
-public class casio extends watch implements gender,qualities {       
-    //ArrayList casio = new ArrayList();  
+public class casio extends watch implements gender,qualities { 
+    
     public void show(){
         System.out.println("========================================================");
         System.out.println("                         Casio                          ");
         System.out.println("========================================================");        
-        print();         
+        print();  
+        //หลุดเเล้ว กลับไป class menu.show(){} บรรทัด 59
         } 
       
     public void print(){               
@@ -20,17 +20,20 @@ public class casio extends watch implements gender,qualities {
         sex = gender.nextInt();
         System.out.println();
         }while(sex !=1 && sex !=2);
-        gender();             
+        gender();
+        //หลุดเเล้ว กลับไป show(){}
     }
     
     public void gender(){     
         if(sex == 1){
             MaleQualities();
-            Msum();  
+            Msum(); 
+            //หลุดเเล้ว กลับไป print(){}
         }
         else {
             FemaleQualities();
             Fsum(); 
+            //หลุดเเล้ว กลับไป print(){}
         }             
     }
     
@@ -72,6 +75,7 @@ public class casio extends watch implements gender,qualities {
                     }
                 }
             }while(i>0);
+            //หลุดเเล้วกลับไป gender(){} ทำ Msum
     }
    
    public void FemaleQualities(){
@@ -109,7 +113,8 @@ public class casio extends watch implements gender,qualities {
                         i++;
                     }
                 } 
-            }while(i>0);                                       
+            }while(i>0);   
+            //หลุดเเล้วกลับไป gender(){} ทำ Fsum
     }       
     
     public void Msum(){          
@@ -126,6 +131,7 @@ public class casio extends watch implements gender,qualities {
             }              
             System.out.println("===========================================================================");
             System.out.println("");
+            //หลุดเเล้วกลับไป gender(){}
         }
     
     public void Fsum(){
@@ -141,14 +147,15 @@ public class casio extends watch implements gender,qualities {
                 Fcasioinven2 = Fcasioinven2 - Casioamount;
             }
             System.out.println("===========================================================================");
-            System.out.println();      
+            System.out.println();  
+            //หลุดเเล้วกลับไป gender(){}
     }
 
-    public int getMcasioinven1() {
+    public int getMcasioinven1() {          //เรียก 
         return Mcasioinven1;
     }
 
-    public void setMcasioinven1(int Mcasioinven1) {
+    public void setMcasioinven1(int Mcasioinven1) {     //กำหนด
         super.Mcasioinven1 = Mcasioinven1;      
     }
 

@@ -1,37 +1,33 @@
 package oop;
 import java.util.ArrayList;
 import java.util.Scanner;
-import static oop.login.UsernameCus;
 public class login { 
-    
     //loginemployee
-    int c;
     int count = 3;
-    static String UsernameLog;
-    static String PasswordLog;
+    private String UsernameLog;
+    private String PasswordLog;
     private String UsernameEmp;
     private String PasswordEmp;
     //logincustomer 
-    static String UsernameCus;
-    static String PasswordCus;
-    static String UsernameCusStr;
-    static String PasswordCusStr;
-    static String UsernameLogCus;
-    static String PasswordLogCus;       
+    private String UsernameCus;
+    private String PasswordCus;
+    private String UsernameCusStr;
+    private String PasswordCusStr;
+    private String UsernameLogCus;
+    private String PasswordLogCus;       
     private String UsernameLogCus1 = "Aom";
     private String PasswordLogCus1 = "1234";
     private String UsernameLogCus2 = "pota";
     private String PasswordLogCus2 = "1234";
-    static int member;
     
     login(){
-        for(int i = 1 ; i <=60 ; i++)
+        for(int i = 1 ; i <=65 ; i++)
         System.out.print("=");           
     }
     
-    login(String UsernameEmp,String PasswordEmp){
+    login(String UsernameEmp,String PasswordEmp){   
         this();
-        this.UsernameEmp = UsernameEmp;
+        this.UsernameEmp = UsernameEmp;    //ฟิกค่าตรง class watchlog บรรทัด40
         this.PasswordEmp = PasswordEmp;
     }
     
@@ -39,7 +35,7 @@ public class login {
         System.out.println("    ===========***************************===========");
         System.out.println("    ====================EMPLOYEE=====================");
         System.out.println("    ===========***************************===========");
-         do{
+        do{
             Scanner LoginEmployee = new Scanner(System.in);
             System.out.println("Please Login");            
             System.out.print("Username >>>>> ");
@@ -47,18 +43,18 @@ public class login {
             System.out.print("Password >>>>> ");
             PasswordLog = LoginEmployee.nextLine();
             System.out.println();
-            if(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))&&count!=0){
-                System.out.println();
-                System.out.println("Password is incorrect, system will shutdown if it is wrong "+count+" times.");
-                count--;
-            }
-            else if(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))||count==-1){               
-                System.out.println("====================================================");
-                System.out.println("  You locked more than 3 times the system shutdown");
-                System.out.println("    ===========================================");
-                System.exit(0);                
-            }
-          }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))&&count!=-1);       
+                if(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))&&count!=0){
+                    System.out.println();
+                    System.out.println("Password is incorrect, system will shutdown if it is wrong "+count+" times.");
+                    count--;
+                }
+                else if(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))||count==-1){               
+                    System.out.println("====================================================");
+                    System.out.println("  You locked more than 3 times the system shutdown  ");
+                    System.out.println("    ===========================================     ");
+                    System.exit(0);                 
+                }
+        }while(!(UsernameEmp.equals(UsernameLog)&&PasswordEmp.equals(PasswordLog))&&count!=-1);       
     }
     
     public void logincustomer(){
@@ -83,7 +79,7 @@ public class login {
         } while (!(UsernameCus.equals(UsernameCusStr) && PasswordCus.equals(PasswordCusStr)));
     }
     
-    public void loginCus(){
+    public void signinCus(){
         Scanner LoginEmployee = new Scanner(System.in); 
         do{          
             System.out.println("Please signin");
@@ -92,8 +88,6 @@ public class login {
             System.out.print("Password >>>>> ");
             PasswordCus= LoginEmployee.nextLine();           
         } while (!(UsernameCus.equals(UsernameCusStr) && PasswordCus.equals(PasswordCusStr)));
-       
-        
     }
        
     public void loginFixCus(){
@@ -107,6 +101,4 @@ public class login {
         }while (!(UsernameLogCus1.equals(UsernameLogCus) && PasswordLogCus1.equals(PasswordLogCus))
              && !(UsernameLogCus2.equals(UsernameLogCus) && PasswordLogCus2.equals(PasswordLogCus)));  
     }
-
-   
 }
