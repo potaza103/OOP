@@ -42,7 +42,10 @@ public class omega extends watch implements gender,qualities {
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Momega = model.nextInt(); 
             System.out.println("");
-          }while(Momega != 1 && Momega != 2);  
+          }while(Momega != 1 && Momega != 2);
+         int i;
+         do{
+             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Omegaamount = model.nextInt();
             System.out.println("");
@@ -52,7 +55,7 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
             }
             if(Momega == 2){
@@ -61,9 +64,10 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
-            }          
+            }
+         }while(i>0);
     }
     
    public void FemaleQualities(){
@@ -76,6 +80,9 @@ public class omega extends watch implements gender,qualities {
             Fomega = model.nextInt(); 
             System.out.println("");
         }while(Fomega != 1 && Fomega != 2);
+        int i;
+        do{
+            i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Omegaamount = model.nextInt();  
             System.out.println("");
@@ -85,7 +92,7 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
             }
             if(Fomega == 2){
@@ -94,9 +101,10 @@ public class omega extends watch implements gender,qualities {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
-            }                                             
+            }
+        }while(i>0);
     }
    
    public void Msum(){          

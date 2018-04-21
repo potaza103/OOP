@@ -4,6 +4,7 @@ public class watchlog extends login {
     static int member;
     static int select;
     login login ;
+       
 //    Casio
     int Mcasioinven1 = 12;
     int Fcasioinven1 = 10;
@@ -70,7 +71,7 @@ public class watchlog extends login {
                         System.out.println("********Again, to confirm yourself.*********");
                         login.loginCus();
                     }
-                    menu menu = new menu( Mcasioinven1, Fcasioinven1 , Mcasioinven2 , Fcasioinven2  ,Momegainven1  ,Fomegainven1  , Momegainven2, Fomegainven2 , Mrolexinven1 , Frolexinven1  , Mrolexinven2, Frolexinven2 , Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1  ,Fradoinven1, Mradoinven2 , Fradoinven2 ); 
+                    menu menu = new menu(Mcasioinven1, Fcasioinven1 , Mcasioinven2 , Fcasioinven2  ,Momegainven1  ,Fomegainven1  , Momegainven2, Fomegainven2 , Mrolexinven1 , Frolexinven1  , Mrolexinven2, Frolexinven2 , Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1  ,Fradoinven1, Mradoinven2 , Fradoinven2 ); 
                     menu.show();
                     
 //                      casio
@@ -106,18 +107,10 @@ public class watchlog extends login {
                         System.out.println("******************************************************************"); 
         
             }else if(select == 2) { 
-                login.loginemp();
-                System.out.println(Mcasioinven1);
+                login.loginemp();               
                 item item = new item( Mcasioinven1, Fcasioinven1, Mcasioinven2, Fcasioinven2 ,Momegainven1 ,Fomegainven1 , Momegainven2  , Fomegainven2 , Mrolexinven1, Frolexinven1 , Mrolexinven2 , Frolexinven2, Mswatchinven1 , Fswatchinven1 , Mswatchinven2 , Fswatchinven2  , Mradoinven1 ,Fradoinven1, Mradoinven2 , Fradoinven2 );
                 item.show();
-                System.out.println();
-                System.out.println("======================= THANK YOU =========================");
-                System.out.println("   =====================================================");
-                System.out.println();                
-                System.out.println();
-//                //วนไปซื้อใหม่ถ้า แอดสินค้าก่อนซื้อ
-//                watchlog watchlog = new watchlog();
-//                watchlog.loginstore();
+                                         
 //                  Casio
                     Mcasioinven1 = item.getMcasioinven1();  
                     Fcasioinven1 = item.getFcasioinven1();
@@ -147,6 +140,7 @@ public class watchlog extends login {
                     Fradoinven1 = item.getFradoinven1();
                     Mradoinven2 = item.getMradoinven2();
                     Fradoinven2 = item.getFradoinven2();
+                    
     
             }
     }

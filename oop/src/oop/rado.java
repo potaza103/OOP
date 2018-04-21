@@ -43,7 +43,10 @@ public class rado extends watch implements gender,qualities  {
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mrado = model.nextInt(); 
             System.out.println("");
-        }while(Mrado != 1 && Mrado != 2);  
+        }while(Mrado != 1 && Mrado != 2);
+        int i ;
+        do{
+            i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Radoamount = model.nextInt();
             System.out.println("");
@@ -53,7 +56,7 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
             }
             if(Mrado == 2){
@@ -62,9 +65,10 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
-            }            
+            }
+        }while(i>0);            
     }
     
    public void FemaleQualities(){
@@ -77,6 +81,9 @@ public class rado extends watch implements gender,qualities  {
             Frado = model.nextInt(); 
             System.out.println("");
         }while(Frado != 1 && Frado != 2);
+        int i;
+        do{
+            i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Radoamount = model.nextInt();  
             System.out.println("");
@@ -86,7 +93,7 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
             }
             if(Frado == 2){
@@ -95,9 +102,10 @@ public class rado extends watch implements gender,qualities  {
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
-            }                               
+            }
+        }while(i>0);
     }
    
    public void Msum(){

@@ -18,10 +18,7 @@ public abstract class watch extends inventory {
     static int sex;
     static int count=1;
     
-    public void thank(){      
-        System.out.println("   ======================= THANK YOU  ========================");      
-    }
-    
+      
     public abstract void print();
 }
 

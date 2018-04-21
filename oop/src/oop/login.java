@@ -20,7 +20,7 @@ public class login {
     static String PasswordLogCus;       
     private String UsernameLogCus1 = "Aom";
     private String PasswordLogCus1 = "1234";
-    private String UsernameLogCus2 = "Pota";
+    private String UsernameLogCus2 = "pota";
     private String PasswordLogCus2 = "1234";
     static int member;
     

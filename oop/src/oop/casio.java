@@ -5,8 +5,8 @@ public class casio extends watch implements gender,qualities {
     public void show(){
         System.out.println("========================================================");
         System.out.println("                         Casio                          ");
-        System.out.println("========================================================"); 
-        print();
+        System.out.println("========================================================");        
+        print();         
         } 
       
     public void print(){               
@@ -42,7 +42,10 @@ public class casio extends watch implements gender,qualities {
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mcasio = model.nextInt(); 
             System.out.println();          
-        }while(Mcasio != 1 && Mcasio != 2);        
+        }while(Mcasio != 1 && Mcasio != 2); 
+         int i;
+            do{
+                i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Casioamount = model.nextInt();          
             System.out.println();
@@ -51,24 +54,25 @@ public class casio extends watch implements gender,qualities {
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
-                        System.out.println("");
-                        MaleQualities() ;
+                        System.out.println();
+                        i++;
                     }
-            }
+            }  
             if(Mcasio == 2){
                     if(Mcasioinven2 < Casioamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println();
-                        MaleQualities() ;
+                        i++;
                     }
-            }
+                }
+            }while(i>0);
     }
     
    public void FemaleQualities(){
         Scanner model = new Scanner(System.in);          
-        do{                       
+            do{                       
             System.out.println("Please select a model Female");
             System.out.println("Enter Number : 1 for "+casio1+" Price : "+FPcasio1+" >>Inventory : "+Fcasioinven1 );
             System.out.println("Enter Number : 2 for "+casio2+" Price : "+FPcasio2+" >>Inventory : "+Fcasioinven2 );
@@ -76,33 +80,37 @@ public class casio extends watch implements gender,qualities {
             Fcasio = model.nextInt(); 
             System.out.println();                      
         }while(Fcasio != 1 && Fcasio != 2);
+        int i;
+          do{
+            i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
-            Casioamount = model.nextInt();  
+            Casioamount = model.nextInt();          
             System.out.println();
             if(Fcasio == 1){
-                    if(Fcasioinven1 < Casioamount ){
+                    if(Fcasioinven1 < Casioamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        FemaleQualities();
+                        i++;
                     }
-            }
+            }  
             if(Fcasio == 2){
                     if(Fcasioinven2 < Casioamount){
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println();
-                        FemaleQualities();
+                        i++;
                     }
-            }                                                   
+                }
+            }while(i>0);                                       
     }       
     
     public void Msum(){          
             System.out.println("=============================== Show Detail ===============================");                      
             if(Mcasio == 1){            
-            sumprice = MPcasio1 * Casioamount;           
+                sumprice = MPcasio1 * Casioamount;                 
                 System.out.println("Male "+casio1+" amount : "+Casioamount+" Price : "+sumprice);                
                 Mcasioinven1 = Mcasioinven1 - Casioamount;
             }
@@ -136,8 +144,7 @@ public class casio extends watch implements gender,qualities {
     }
 
     public void setMcasioinven1(int Mcasioinven1) {
-        super.Mcasioinven1 = Mcasioinven1;
-        System.out.println(Mcasioinven1);
+        super.Mcasioinven1 = Mcasioinven1;      
     }
 
     public int getFcasioinven1() {

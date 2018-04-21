@@ -38,12 +38,15 @@ public class rolex extends watch implements gender,qualities{
         Scanner model = new Scanner(System.in);
          do{
             System.out.println("Please select a model Male");
-            System.out.println("Enter Number : 1 for "+rolex1+" Price: "+MProlex1+" >>Inventory " + Mrolexinven1 );
-            System.out.println("Enter Number : 2 for "+rolex2+" Price: "+MProlex2+" >>Inventory " + Mrolexinven2 );
+            System.out.println("Enter Number : 1 for "+rolex1+" Price: "+MProlex1+" >>Inventory " +Mrolexinven1 );
+            System.out.println("Enter Number : 2 for "+rolex2+" Price: "+MProlex2+" >>Inventory " +Mrolexinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");           
             Mrolex = model.nextInt(); 
             System.out.println("");
-          }while(Mrolex != 1 && Mrolex != 2);  
+          }while(Mrolex != 1 && Mrolex != 2);
+         int i;
+         do{
+             i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Rolexamount = model.nextInt();
             System.out.println("");
@@ -52,8 +55,8 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
-                        System.out.println("");
-                        print();
+                        System.out.println(""); 
+                        i++;
                     }
             }
             if(Mrolex == 2){
@@ -62,21 +65,25 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
-            }           
+            }
+         }while(i>0);
     }
     
    public void FemaleQualities(){
         Scanner model = new Scanner(System.in);
         do{
             System.out.println("Please select a model Female");
-            System.out.println("Enter Number : 1 for "+rolex1+" Price : "+FProlex1+" >>Inventory : " + Frolexinven1 );
-            System.out.println("Enter Number : 2 for "+rolex2+" Price : "+FProlex2+" >>Inventory : " + Frolexinven2 );
+            System.out.println("Enter Number : 1 for "+rolex1+" Price : "+FProlex1+" >>Inventory : " +Frolexinven1 );
+            System.out.println("Enter Number : 2 for "+rolex2+" Price : "+FProlex2+" >>Inventory : " +Frolexinven2 );
             System.out.print("Enter Number model : >>>>>>>>>> ");            
             Frolex = model.nextInt(); 
             System.out.println("");
         }while(Frolex != 1 && Frolex != 2);
+        int i;
+        do{
+            i=0;
             System.out.print("How many do you want ? >>>>>>>>> ");
             Rolexamount = model.nextInt();  
             System.out.println("");
@@ -85,8 +92,8 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("****************************");
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
-                        System.out.println("");
-                        print();
+                        System.out.println("");  
+                        i++;
                     }
             }
             if(Frolex == 2){
@@ -95,9 +102,11 @@ public class rolex extends watch implements gender,qualities{
                         System.out.println("     Amount not enough");
                         System.out.println("****************************");
                         System.out.println("");
-                        print();
+                        i++;
                     }
-            }                              
+            }
+        }while(i>0);
+        
     }
    
    public void Msum(){          

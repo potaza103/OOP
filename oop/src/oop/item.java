@@ -26,7 +26,7 @@ public  class item extends watch {
         super.Fradoinven1 = Fradoinven1;
         super.Mradoinven2 = Mradoinven2;
         super.Fradoinven2 = Fradoinven2;  
-    }
+    }  
     
     public void show() {
         System.out.println("    ===========***************************===========");
@@ -35,7 +35,7 @@ public  class item extends watch {
         System.out.println();
         System.out.println("Press 1 : Casio ");
         System.out.println("======================== Status ========================");
-        System.out.println(""+casio1+" //Male: "+Mcasioinven1+" //Female: "+Fcasioinven1);
+        System.out.println(""+casio1+" //Male: "+super.Mcasioinven1+" //Female: "+Fcasioinven1);
         System.out.println(""+casio2+" //Male: "+Mcasioinven2+" //Female: "+Fcasioinven2); 
         System.out.println("    =================================================");
         System.out.println();
