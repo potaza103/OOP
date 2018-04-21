@@ -130,5 +130,38 @@ public class rado extends watch implements gender,qualities  {
             } 
             System.out.println("===========================================================================");
             System.out.println();
-   }   
+   } 
+
+    public int getMradoinven1() {
+        return Mradoinven1;
+    }
+
+    public void setMradoinven1(int Mradoinven1) {
+        this.Mradoinven1 = Mradoinven1;
+    }
+
+    public int getFradoinven1() {
+        return Fradoinven1;
+    }
+
+    public void setFradoinven1(int Fradoinven1) {
+        this.Fradoinven1 = Fradoinven1;
+    }
+
+    public int getMradoinven2() {
+        return Mradoinven2;
+    }
+
+    public void setMradoinven2(int Mradoinven2) {
+        this.Mradoinven2 = Mradoinven2;
+    }
+
+    public int getFradoinven2() {
+        return Fradoinven2;
+    }
+
+    public void setFradoinven2(int Fradoinven2) {
+        this.Fradoinven2 = Fradoinven2;
+    }
+   
 }

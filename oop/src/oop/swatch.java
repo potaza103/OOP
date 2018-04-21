@@ -131,5 +131,37 @@ public class swatch extends watch  implements gender,qualities{
             System.out.println();
    }     
 
+    public int getMswatchinven1() {
+        return Mswatchinven1;
+    }
+
+    public void setMswatchinven1(int Mswatchinven1) {
+        this.Mswatchinven1 = Mswatchinven1;
+    }
+
+    public int getFswatchinven1() {
+        return Fswatchinven1;
+    }
+
+    public void setFswatchinven1(int Fswatchinven1) {
+        this.Fswatchinven1 = Fswatchinven1;
+    }
+
+    public int getMswatchinven2() {
+        return Mswatchinven2;
+    }
+
+    public void setMswatchinven2(int Mswatchinven2) {
+        this.Mswatchinven2 = Mswatchinven2;
+    }
+
+    public int getFswatchinven2() {
+        return Fswatchinven2;
+    }
+
+    public void setFswatchinven2(int Fswatchinven2) {
+        this.Fswatchinven2 = Fswatchinven2;
+    }
+   
 
 }

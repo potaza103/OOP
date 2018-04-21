@@ -131,4 +131,36 @@ public class omega extends watch implements gender,qualities {
             System.out.println(); 
    }
 
+    public int getMomegainven1() {
+        return Momegainven1;
+    }
+
+    public void setMomegainven1(int Momegainven1) {
+        this.Momegainven1 = Momegainven1;
+    }
+
+    public int getFomegainven1() {
+        return Fomegainven1;
+    }
+
+    public void setFomegainven1(int Fomegainven1) {
+        this.Fomegainven1 = Fomegainven1;
+    }
+
+    public int getMomegainven2() {
+        return Momegainven2;
+    }
+
+    public void setMomegainven2(int Momegainven2) {
+        this.Momegainven2 = Momegainven2;
+    }
+
+    public int getFomegainven2() {
+        return Fomegainven2;
+    }
+
+    public void setFomegainven2(int Fomegainven2) {
+        this.Fomegainven2 = Fomegainven2;
+    }
+   
 }

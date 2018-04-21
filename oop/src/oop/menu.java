@@ -61,13 +61,45 @@ public class menu extends watch {
             super.Fcasioinven1 = getFcasioinven1();
             super.Fcasioinven2 = getFcasioinven2();
         }else if (numbermodel==2){
-            omega.show();   
-        }else if (numbermodel==3){             
+            casio.setMomegainven1(Momegainven1);
+            casio.setMomegainven2(Momegainven2);
+            casio.setFomegainven1(Fomegainven1);
+            casio.setFomegainven2(Fomegainven2);
+            omega.show();  
+            super.Momegainven1=getMomegainven1());
+            super.Momegainven2=getMomegainven2());
+            super.Fomegainven1=getFomegainven1());
+            super.Fomegainven2=getFomegainven2());
+        }else if (numbermodel==3){ 
+            casio.setMrolexinven1(Mrolexinven1);
+            casio.setMrolexinven2(Mrolexinven2);
+            casio.setFrolexinven1(Frolexinven1);
+            casio.setFrolexinven2(Frolexinven2);
             rolex.show(); 
+            super.Mrolexinven1=getMrolexinven1());
+            super.Mrolexinven2=getMrolexinven2());
+            super.Frolexinven1=getFrolexinven1());
+            super.Frolexinven2=getFrolexinven2());
         }else if (numbermodel==4){
-            swatch.show();              
-        }else if (numbermodel==5){          
+            casio.setMswatchinven1(Mswatchinven1);
+            casio.setMswatchinven2(Mswatchinven2);
+            casio.setFswatchinven1(Fswatchinven1);
+            casio.setFswatchinven2(Fswatchinven2);
+            swatch.show(); 
+            super.Mswatchinven1=getMswatchinven1());
+            super.Mswatchinven2=getMswatchinven2());
+            super.Fswatchinven1=getFswatchinven1());
+            super.Fswatchinven2=getFswatchinven2());
+        }else if (numbermodel==5){ 
+            casio.setMradoinven1(Mradoinven1);
+            casio.setMradoinven2(Mradoinven2);
+            casio.setFradoinven1(Fradoinven1);
+            casio.setFradoinven2(Fradoinven2);
             rado.show();
+            super.Mradoinven1=getMradoinven1());
+            super.Mradoinven2=getMradoinven2());
+            super.Fradoinven1=getFradoinven1());
+            super.Fradoinven2=getFradoinven2());
         }
          allsum = allsum+sumprice;   
         do{
