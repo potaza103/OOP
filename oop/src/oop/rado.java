@@ -137,7 +137,7 @@ public class rado extends watch implements gender,qualities  {
     }
 
     public void setMradoinven1(int Mradoinven1) {
-        this.Mradoinven1 = Mradoinven1;
+        super.Mradoinven1 = Mradoinven1;
     }
 
     public int getFradoinven1() {
@@ -145,7 +145,7 @@ public class rado extends watch implements gender,qualities  {
     }
 
     public void setFradoinven1(int Fradoinven1) {
-        this.Fradoinven1 = Fradoinven1;
+        super.Fradoinven1 = Fradoinven1;
     }
 
     public int getMradoinven2() {
@@ -153,7 +153,7 @@ public class rado extends watch implements gender,qualities  {
     }
 
     public void setMradoinven2(int Mradoinven2) {
-        this.Mradoinven2 = Mradoinven2;
+        super.Mradoinven2 = Mradoinven2;
     }
 
     public int getFradoinven2() {
@@ -161,7 +161,7 @@ public class rado extends watch implements gender,qualities  {
     }
 
     public void setFradoinven2(int Fradoinven2) {
-        this.Fradoinven2 = Fradoinven2;
+        super.Fradoinven2 = Fradoinven2;
     }
    
 }

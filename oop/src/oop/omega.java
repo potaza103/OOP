@@ -136,7 +136,7 @@ public class omega extends watch implements gender,qualities {
     }
 
     public void setMomegainven1(int Momegainven1) {
-        this.Momegainven1 = Momegainven1;
+        super.Momegainven1 = Momegainven1;
     }
 
     public int getFomegainven1() {
@@ -144,7 +144,7 @@ public class omega extends watch implements gender,qualities {
     }
 
     public void setFomegainven1(int Fomegainven1) {
-        this.Fomegainven1 = Fomegainven1;
+        super.Fomegainven1 = Fomegainven1;
     }
 
     public int getMomegainven2() {
@@ -152,7 +152,7 @@ public class omega extends watch implements gender,qualities {
     }
 
     public void setMomegainven2(int Momegainven2) {
-        this.Momegainven2 = Momegainven2;
+        super.Momegainven2 = Momegainven2;
     }
 
     public int getFomegainven2() {
@@ -160,7 +160,7 @@ public class omega extends watch implements gender,qualities {
     }
 
     public void setFomegainven2(int Fomegainven2) {
-        this.Fomegainven2 = Fomegainven2;
+        super.Fomegainven2 = Fomegainven2;
     }
    
 }

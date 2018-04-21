@@ -136,7 +136,7 @@ public class swatch extends watch  implements gender,qualities{
     }
 
     public void setMswatchinven1(int Mswatchinven1) {
-        this.Mswatchinven1 = Mswatchinven1;
+        super.Mswatchinven1 = Mswatchinven1;
     }
 
     public int getFswatchinven1() {
@@ -144,7 +144,7 @@ public class swatch extends watch  implements gender,qualities{
     }
 
     public void setFswatchinven1(int Fswatchinven1) {
-        this.Fswatchinven1 = Fswatchinven1;
+        super.Fswatchinven1 = Fswatchinven1;
     }
 
     public int getMswatchinven2() {
@@ -152,7 +152,7 @@ public class swatch extends watch  implements gender,qualities{
     }
 
     public void setMswatchinven2(int Mswatchinven2) {
-        this.Mswatchinven2 = Mswatchinven2;
+        super.Mswatchinven2 = Mswatchinven2;
     }
 
     public int getFswatchinven2() {
@@ -160,7 +160,7 @@ public class swatch extends watch  implements gender,qualities{
     }
 
     public void setFswatchinven2(int Fswatchinven2) {
-        this.Fswatchinven2 = Fswatchinven2;
+        super.Fswatchinven2 = Fswatchinven2;
     }
    
 

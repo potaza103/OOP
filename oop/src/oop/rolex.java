@@ -136,7 +136,7 @@ public class rolex extends watch implements gender,qualities{
     }
 
     public void setMrolexinven1(int Mrolexinven1) {
-        this.Mrolexinven1 = Mrolexinven1;
+        super.Mrolexinven1 = Mrolexinven1;
     }
 
     public int getFrolexinven1() {
@@ -144,7 +144,7 @@ public class rolex extends watch implements gender,qualities{
     }
 
     public void setFrolexinven1(int Frolexinven1) {
-        this.Frolexinven1 = Frolexinven1;
+        super.Frolexinven1 = Frolexinven1;
     }
 
     public int getMrolexinven2() {
@@ -152,7 +152,7 @@ public class rolex extends watch implements gender,qualities{
     }
 
     public void setMrolexinven2(int Mrolexinven2) {
-        this.Mrolexinven2 = Mrolexinven2;
+        super.Mrolexinven2 = Mrolexinven2;
     }
 
     public int getFrolexinven2() {
@@ -160,7 +160,7 @@ public class rolex extends watch implements gender,qualities{
     }
 
     public void setFrolexinven2(int Frolexinven2) {
-        this.Frolexinven2 = Frolexinven2;
+        super.Frolexinven2 = Frolexinven2;
     }
    
 }
